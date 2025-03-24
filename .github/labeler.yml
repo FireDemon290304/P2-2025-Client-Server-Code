@@ -1,7 +1,8 @@
-# Add Node Changes Label
+# Add Node Changes Label (except in PubRes)
 Node Changes:
 - changed-files:
   - any-glob-to-any-file: 'node/**/*'
+  - all-globs-to-all-files: '!node/PublicResources/**/*'
 
 # Add Public Resource label to PR which changes things in those folders
 Public Resources:
