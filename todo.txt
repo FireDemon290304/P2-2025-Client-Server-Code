@@ -1,2 +1,3 @@
-add actual testcases
+add actual testcases (see package.json)
+update actions to not install dev dependancies
 do literally everything
