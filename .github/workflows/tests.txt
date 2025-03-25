@@ -2,6 +2,7 @@
 ## Every push on main
 ## Every pull_request to main
 # To "activate" the thing, rename filetype to .yml
+## Before doing this, please make a test file/system, and set it in the package.json (in node)
 
 name: Integration Tests
 
