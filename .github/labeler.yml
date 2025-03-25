@@ -1,3 +1,4 @@
+# ------------------------- Default Labels -------------------------
 # Add Node Changes Label (except in PubRes)
 Node Changes:
 - changed-files:
@@ -7,3 +8,34 @@ Node Changes:
 Public Resources:
 - changed-files:
   - any-glob-to-any-file: 'public/**/*'
+
+# ------------------------- Code Changes -------------------------
+# Add app, router, server label (excluding modules)
+App Changes:
+- changed-files:
+  - any-glob-to-any-file: 'node/**/*'
+  - not-in-folder: 'node/modules/**/*'
+
+# Add Module Changes Label
+Module Changes:
+- changed-files:
+  - in-folder: 'node/modules/**/*'
+
+# ------------------------- Custom Labels -------------------------
+# Add Workflow Changes Label
+Workflow Changes:
+- changed-files:
+  - '.github/workflows/**/*.yml'
+
+# Configuration Changes Label
+Configuration Changes:
+- changed-files:
+  - 'eslint.config.mjs'
+  - 'package.json'
+  - '.gitignore'
+
+# Add Documentation Changes Label
+Documentation Changes:
+- changed-files:
+  - 'README.md'
+  - 'LICENSE'
