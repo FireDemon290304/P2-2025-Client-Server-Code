@@ -14,6 +14,9 @@ export { startServer, respondError, htmlResponse, jsonResponse, fileResponse };
 // ----------------- Basic configs -----------------
 dotenv.config();
 const hostname = '127.0.0.1';
+// for env to work, create .env file with PORT=3000 (or whatever port you want).
+// should be in root dir
+// dotevn in package.json as dependency so will be installed with npm install
 const PORT = process.env.PORT || 3000;      // todo: change to match actual server, not just local
 
 const rootDir = process.cwd();
@@ -100,6 +103,10 @@ function securePath(userPath) {
 }
 
 // ----------------- Server -----------------
+// todo: maybe use express instead of http module
+// https://expressjs.com/en/starter/hello-world.html
+// should maybe also have used to set up routes, but wanted to try doing it myself
+
 const server = http.createServer(requestHandler);
 
 function requestHandler(req, res) {
