@@ -1,13 +1,14 @@
 import { processReq } from "./router.js";
-import { InternalError } from "./utils.js";
-export { startServer, respondError, htmlResponse, jsonResponse };
+import { InternalError, NoResourceError } from "./utils.js";
+export { startServer, respondError, htmlResponse, jsonResponse, fileResponse };
 
-//import fs from 'fs';
+import fs from 'fs';
 //import url from 'url';
 //import path from 'path';
 import process from 'process';
 import * as utils from './utils.js';
 import http from 'http';
+import { log } from "console";
 // above are tmps, not used yet
 
 // ----------------- Basic configs -----------------
@@ -22,7 +23,7 @@ const PORT = process.env.PORT || 3000;
 function respondError(res, error) {
     res.statusCode = error.responseCode;
     res.setHeader('Content-Type', 'text/txt');
-    res.write(error.message);
+    res.write(`${error.responseCode}: ${error.message}`);
     res.end("\n");
 
     utils.log(error, true);
@@ -42,6 +43,48 @@ function jsonResponse(res, json){
     res.write(JSON.stringify(json));
     res.end('\n');
 }
+
+function fileResponse(res, path) {
+    // todo: secure path
+    log(`Serving file: ${path}`);
+    fs.readFile(path, (err, data) => {
+        if (err) {
+            respondError(res, new NoResourceError(err.message));
+        } else {
+            res.statusCode = 200;
+            // todo: set content type based on file extension using mmmagic
+            res.setHeader('Content-Type', guessMimeType(path));
+            res.write(data);
+            res.end('\n');
+        }
+    });
+}   
+
+// ripped from lecture notes, use mmagic instead later, if needed/want to make better
+//A helper function that converts filename suffix to the corresponding HTTP content type
+//better alternative: use require('mmmagic') library
+function guessMimeType(fileName){
+    const fileExtension=fileName.split('.').pop().toLowerCase();
+    console.log(fileExtension);
+    const ext2Mime ={ //Aught to check with IANA spec
+      "txt": "text/txt",
+      "html": "text/html",
+      "ico": "image/ico", // CHECK x-icon vs image/vnd.microsoft.icon
+      "js": "text/javascript",
+      "json": "application/json", 
+      "css": 'text/css',
+      "png": 'image/png',
+      "jpg": 'image/jpeg',
+      "wav": 'audio/wav',
+      "mp3": 'audio/mpeg',
+      "svg": 'image/svg+xml',
+      "pdf": 'application/pdf',
+      "doc": 'application/msword',
+      "docx": 'application/msword'
+     };
+      //incomplete
+    return (ext2Mime[fileExtension]||"text/plain");
+  }
 
 // ----------------- Server -----------------
 const server = http.createServer(requestHandler);

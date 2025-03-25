@@ -1,0 +1,14 @@
+here to store temp stuff that may or may not be useful later
+
+case '/favicon.ico':
+    fs.readFile(iconPath, (err, data) => {
+        if (err) {
+            respondError(res, new NoResourceError(`No resource at ${path}`));
+        } else {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'image/x-icon');
+            res.write(data);
+            res.end();
+        }
+    });
+    break;

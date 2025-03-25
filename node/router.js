@@ -1,12 +1,7 @@
 export { processReq };
 // import app stuff
-import { htmlResponse, respondError, startServer } from "./server.js";
-import { log, MethodNotAllowedError, NoResourceError, NotImplementedError } from "./utils.js";
-import fs from 'fs';
-import path from 'path';
-
-// becaus this is needed for some reason...
-const iconPath = path.join(process.cwd(), 'public', 'favicon.ico');
+import { htmlResponse, respondError, startServer, fileResponse } from "./server.js";
+import { log, MethodNotAllowedError, NotImplementedError } from "./utils.js";
 
 
 startServer();
@@ -20,33 +15,22 @@ function processReq(req, res) {
     let path = decodeURIComponent(url.pathname);
 
     switch (req.method) {
-        case 'GET':
+        case 'GET':     // handle all GET requests
             switch (path) {
                 case '/':
                     htmlResponse(res, '<h1>Hello, World!</h1>');
                     break;
-                case '/favicon.ico':
-                    fs.readFile(iconPath, (err, data) => {
-                        if (err) {
-                            respondError(res, new NoResourceError(`No resource at ${path}`));
-                        } else {
-                            res.statusCode = 200;
-                            res.setHeader('Content-Type', 'image/x-icon');
-                            res.write(data);
-                            res.end();
-                        }
-                    });
-                    break;
-                default:
-                    respondError(res, new NoResourceError(`No resource at ${path}`));
+
+                default:    // default is to serve files
+                    fileResponse(res, req.url);
                     break;
             }
             break;
         
-        case 'POST':
+        case 'POST':    // handle all POST requests
             respondError(res, new NotImplementedError('POST not implemented'));
             break;
-        default:
+        default:        // default is to respond with 405
             respondError(res, new MethodNotAllowedError('Unkown method'));
             break;
     }
