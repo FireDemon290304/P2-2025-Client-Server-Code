@@ -42,3 +42,6 @@ GOT: GET /
 GOT: GET /favicon.ico
 GOT: GET /
 GOT: GET /favicon.ico
+[INFO] GOT: GET /fav
+[ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\public\fav'
+[INFO] GOT: GET /favicon.ico

@@ -8,12 +8,12 @@ const logStream = fs.createWriteStream(logFile, { flags: 'a' });
 
 function logError(error) {
     console.error(error);
-    logStream.write(`${error.name}${error.responseCode}!!: ${error.message}\n`);
+    logStream.write(`[ERROR] ${error.name} (${error.responseCode}): ${error.message}\n`);
 }
 
 function logMessage(message) {
     console.log(message);
-    logStream.write(message + '\n');
+    logStream.write(`[INFO] ${message}\n`);
 }
 
 function log(message, error=false) {
