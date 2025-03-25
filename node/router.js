@@ -1,8 +1,7 @@
-export { processReq };
-// import app stuff
+// todo: import app stuff
 import { htmlResponse, respondError, startServer, fileResponse } from "./server.js";
 import { log, MethodNotAllowedError, NotImplementedError } from "./utils.js";
-
+export { processReq };
 
 startServer();
 

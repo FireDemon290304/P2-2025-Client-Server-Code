@@ -1,23 +1,23 @@
-import { processReq } from "./router.js";
-import { InternalError, NoResourceError } from "./utils.js";
-export { startServer, respondError, htmlResponse, jsonResponse, fileResponse };
+// Purpose: Server module for serving static files and handling requests.
 
+// ----------------- Imports and Exports -----------------
 import fs from 'fs';
-//import url from 'url';
 import path from 'path';
 import process from 'process';
-import * as utils from './utils.js';
 import http from 'http';
-import { log } from "console";
-// above are tmps, not used yet
+import dotenv from 'dotenv';
+
+import { processReq } from "./router.js";
+import { log, InternalError, NoResourceError } from "./utils.js";
+export { startServer, respondError, htmlResponse, jsonResponse, fileResponse };
 
 // ----------------- Basic configs -----------------
+dotenv.config();
 const hostname = '127.0.0.1';
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;      // todo: change to match actual server, not just local
 
 const rootDir = process.cwd();
 const publicDir = 'public';
-
 
 // ----------------- Response Handlers -----------------
 function respondError(res, error) {
@@ -26,7 +26,7 @@ function respondError(res, error) {
     res.write(`${error.responseCode}: ${error.message}`);
     res.end("\n");
 
-    utils.log(error, true);
+    log(error, true);
 }
 
 /* send a response with htmlString as html page */
@@ -112,6 +112,6 @@ function requestHandler(req, res) {
 
 function startServer() {
     server.listen(PORT, hostname, () => {
-        console.log(`Server running at http://${hostname}:${PORT}/`);
+        log(`Server running at http://${hostname}:${PORT}/`);
     });
 }

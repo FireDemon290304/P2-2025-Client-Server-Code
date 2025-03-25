@@ -1,23 +1,32 @@
 //import { v4 as uuidv4 } from 'uuid'; // UUID generator (Universally Unique Identifier (for unique session IDs or other unique values))
 import fs from 'fs';
-export { log };
+export { log, getTimestamp };
 
 // --------------- Loggers ---------------
 const logFile = 'access.log';
 const logStream = fs.createWriteStream(logFile, { flags: 'a' });
 
-function logError(error) {
-    console.error(error);
-    logStream.write(`[ERROR] ${error.name} (${error.responseCode}): ${error.message}\n`);
+// helper function to get timestamp
+// Helper function to get timestamp in local ISO format
+function getTimestamp(string = true) {
+    const now = new Date();
+    const offset = now.getTimezoneOffset() * 60000; // Offset in milliseconds
+    const localISOTime = new Date(now - offset).toISOString().slice(0, -1); // Format as YYYY-MM-DDTHH:mm:ss.sss
+    return string ? localISOTime : new Date(now - offset);
 }
 
-function logMessage(message) {
+function _logError(error) {
+    console.error(error);
+    logStream.write(`[${getTimestamp()}] [ERROR] ${error.name} (${error.responseCode}): ${error.message}\n`);
+}
+
+function _logMessage(message) {
     console.log(message);
-    logStream.write(`[INFO] ${message}\n`);
+    logStream.write(`[${getTimestamp()}] [INFO] ${message}\n`);
 }
 
 function log(message, error=false) {
-    error ? logError(message) : logMessage(message);
+    error ? _logError(message) : _logMessage(message);
 }
 
 // --------------- UUID ---------------
