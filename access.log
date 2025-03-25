@@ -33,3 +33,12 @@ GOT: GET /favicon.ico
 InternalError500!!: fs.readfile is not a function
 GOT: GET /favicon.ico
 NoResourceError404!!: ENOENT: no such file or directory, open 'D:\favicon.ico'
+GOT: GET /favicon.ico
+NoResourceError404!!: ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico'
+GOT: GET /favicon.ico
+GOT: GET /favicon.ico
+GOT: GET /
+GOT: GET /
+GOT: GET /favicon.ico
+GOT: GET /
+GOT: GET /favicon.ico

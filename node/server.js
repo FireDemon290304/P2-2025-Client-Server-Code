@@ -16,7 +16,7 @@ const hostname = '127.0.0.1';
 const PORT = process.env.PORT || 3000;
 
 const rootDir = process.cwd();
-const publicDir = path.join(rootDir, 'public'); // as of yet unused
+const publicDir = 'public';
 
 
 // ----------------- Response Handlers -----------------
@@ -46,7 +46,6 @@ function jsonResponse(res, json) {
 
 function fileResponse(res, path) {
     path = securePath(path);
-    if (!path) throw new NoResourceError('Invalid path');
     log(`Serving file: ${path}`);
     fs.readFile(path, (err, data) => {
         if (err) {
