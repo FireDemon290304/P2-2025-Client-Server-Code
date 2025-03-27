@@ -1,0 +1,33 @@
+# Make tests that run on:
+## Every push on main
+## Every pull_request to main
+# To "activate" the thing, rename filetype to .yml
+## Before doing this, please make a test file/system, and set it in the package.json (in node)
+
+name: Integration Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run tests
+        run: npm test
