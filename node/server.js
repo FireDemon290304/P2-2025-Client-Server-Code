@@ -32,6 +32,8 @@ function respondError(res, error) {
     log(error, true);
 }
 
+// i want to ad this comment
+
 /* send a response with htmlString as html page */
 function htmlResponse(res, htmlString) {
     res.statusCode = 200;
