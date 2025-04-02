@@ -1,27 +1,14 @@
-name: Integration Tests
+here to store temp stuff that may or may not be useful later
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v2
-      
-      - name: Setup environment
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          
-      - name: Install dependencies
-        run: npm install
-      
-      - name: Run tests
-        run: npm test
+case '/favicon.ico':
+    fs.readFile(iconPath, (err, data) => {
+        if (err) {
+            respondError(res, new NoResourceError(`No resource at ${path}`));
+        } else {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'image/x-icon');
+            res.write(data);
+            res.end();
+        }
+    });
+    break;

@@ -1,0 +1,53 @@
+GOT: GET /
+GOT: GET /favicon.ico
+NoResourceError404!!: No resource at /favicon.ico
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /
+GOT: GET /favicon.ico
+NoResourceError404!!: No resource at /favicon.ico
+GOT: GET /public/favicon.ico
+NoResourceError404!!: No resource at /public/favicon.ico
+GOT: GET /
+GOT: GET /favico.ico
+NoResourceError404!!: No resource at /favico.ico
+GOT: GET /favicon.ico
+GOT: GET /
+GOT: GET /favicon.ico
+NoResourceError404!!: No resource at /favicon.ico
+GOT: GET /favico.ico
+NoResourceError404!!: No resource at /favico.ico
+GOT: GET /
+GOT: GET /favicon.ico
+InternalError500!!: fs.readfile is not a function
+GOT: GET /favicon.ico
+InternalError500!!: fs.readfile is not a function
+GOT: GET /favicon.ico
+NoResourceError404!!: ENOENT: no such file or directory, open 'D:\favicon.ico'
+GOT: GET /favicon.ico
+NoResourceError404!!: ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico'
+GOT: GET /favicon.ico
+GOT: GET /favicon.ico
+GOT: GET /
+GOT: GET /
+GOT: GET /favicon.ico
+GOT: GET /
+GOT: GET /favicon.ico
+[INFO] GOT: GET /fav
+[ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\public\fav'
+[INFO] GOT: GET /favicon.ico
+[2025-03-25T13:06:00.297Z][INFO] GOT: GET /
+[25.3.2025, 14.07.51][INFO] GOT: GET /
+[Tue Mar 25 2025 15:11:22 GMT+0100 (Centraleuropæisk normaltid)][INFO] GOT: GET /
+[2025-03-25T14:13:30.323][INFO] GOT: GET /
+[2025-03-25T14:23:37.690] [INFO] Server running at http://127.0.0.1:3001/
+[2025-03-25T14:24:21.882] [INFO] GOT: GET /
