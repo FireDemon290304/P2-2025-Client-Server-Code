@@ -261,3 +261,12 @@ GOT: GET /favicon.ico
 [2025-04-03T10:02:32.303] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
 [2025-04-03T10:02:32.664] [INFO] GOT: GET /favicon.ico
 [2025-04-03T10:02:32.664] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T10:03:35.263] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T10:03:36.952] [INFO] GOT: GET /
+[2025-04-03T10:03:36.953] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T10:03:37.068] [INFO] GOT: GET /css/style.css
+[2025-04-03T10:03:37.070] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T10:03:37.083] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T10:03:37.084] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T10:03:37.460] [INFO] GOT: GET /favicon.ico
+[2025-04-03T10:03:37.460] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
