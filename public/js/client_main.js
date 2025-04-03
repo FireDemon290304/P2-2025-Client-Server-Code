@@ -1,14 +1,9 @@
 'use strict'
 
-function testButton() {
-    console.log("test button click :3");
-}
+function testButton() { console.log("test button click :3"); }
+
+document.getElementById("import-button").addEventListener("click", testButton);
 
 document.addEventListener('DOMContentLoaded', () => {
-    const button = document.getElementById("import-button");
-    if (button) {
-        button.addEventListener("click", testButton);
-    }
-});
-
-console.log("loaded js");
+    console.log("loaded client js"); 
+ });
