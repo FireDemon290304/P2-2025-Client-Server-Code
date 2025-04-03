@@ -1,37 +1,32 @@
-// todo: import app stuff
-import { respondError, fileResponse } from "./server.js";
-import { log, MethodNotAllowedError, NotImplementedError } from "./utils.js";
-export { processReq };
+import express from 'express';
+import path from 'path';
+import { log, InternalError, NoResourceError } from './utils.js'
 
-// todo: Change to express
+const router = express.Router();
+const publicDir = path.join(process.cwd(), 'public');
 
-function processReq(req, res) {
-    log("GOT: " + req.method + " " + req.url);
+// ----------------- routes -----------------
+// logging middleware
+router.use((req, res, next) => {
+    log(`GOT: ${req.method} ${req.url}`);
+    next();
+});
 
-    let baseURL = `http://${req.headers.host}/`;
-    let url = new URL(req.url, baseURL);
-    //let searchParams = new URLSearchParams(url.search); // use if query params are needed
-    let path = decodeURIComponent(url.pathname);
+// errors middleware
+router.use((err, req, res, next) => {
+    log(new InternalError(err.message), true);
+    res.status(500).send('500: Internal Server Error');
+    next();
+});
 
-    switch (req.method) {
-        case 'GET':     // handle all GET requests
-            switch (path) {
-                case '/':
-                    fileResponse(res, "/html/index.html");
-                    //htmlResponse(res, '<h1>Hello, World!</h1>');
-                    break;
+router.get('/', (req, res) => {
+    res.sendFile(path.join(publicDir, 'html', 'index.html'));
+});
 
-                default:    // default is to serve files
-                    fileResponse(res, req.url);
-                    break;
-            }
-            break;
-        
-        case 'POST':    // handle all POST requests
-            respondError(res, new NotImplementedError('POST not implemented'));
-            break;
-        default:        // default is to respond with 405
-            respondError(res, new MethodNotAllowedError('Unkown method'));
-            break;
-    }
-}
+// Unknown routes
+router.use((req, res) => {
+    log(new NoResourceError('Resource not found'), true)
+    res.status(404).send('404: Resource not found');
+});
+
+export default router;
