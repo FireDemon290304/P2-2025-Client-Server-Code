@@ -294,3 +294,8 @@ GOT: GET /favicon.ico
 [2025-04-03T12:52:28.030] [ERROR] NoResourceError (404): Resource not found
 [2025-04-03T12:53:00.842] [INFO] Server runnign at http://127.0.0.1:3000/
 [2025-04-03T12:53:04.805] [INFO] GOT: GET /
+[2025-04-03T13:06:29.864] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-03T13:11:13.053] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-03T13:11:34.890] [INFO] GOT: GET /
+[2025-04-03T13:11:44.006] [INFO] GOT: GET /testerror
+[2025-04-03T13:11:44.007] [ERROR] NoResourceError (404): Resource not found
