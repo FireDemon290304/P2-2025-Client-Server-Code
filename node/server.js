@@ -1,27 +1,55 @@
 // Purpose: Server module for serving static files and handling requests.
 
 // ----------------- Imports and Exports -----------------
-import fs from 'fs';
+import express from 'express';
+//import fs from 'fs';
 import path from 'path';
 import process from 'process';
-import http from 'http';
+//import http from 'http';
 import dotenv from 'dotenv';
 
-import { processReq } from "./router.js";
 import { log, InternalError, NoResourceError } from "./utils.js";
-export { startServer, respondError, htmlResponse, jsonResponse, fileResponse };
+
+//import { processReq } from "./router.js";
+//export { startServer, respondError, htmlResponse, jsonResponse, fileResponse };
+export { startServer };
 
 // ----------------- Basic configs -----------------
 dotenv.config();
+const app = express();
 const hostname = '127.0.0.1';
+const PORT = process.env.PORT || 3240;  // node0: 3240, node9: 3249
 
-// node0: 3240, node9: 3249
-const PORT = process.env.PORT || 3240;      // todo: change to match actual server, not just local
-
+// serve static from public
 const rootDir = process.cwd();
-const publicDir = 'public';
+const publicDir = path.join(rootDir, 'public');
+app.use(express.static(publicDir));
+
+// logging
+app.use((req, res, next) => {
+    log(`GOT: ${req.method} ${req.url}`);
+    next();
+});
+
+// routes
+app.get('/', (req, res) => {
+    res.sendFile(path.join(publicDir, 'html', 'index.html'));
+});
+
+// Unknown routes
+app.use((req, res) => {
+    log(new NoResourceError('Resource not found'), true)
+    res.status(404).send('404: Resource not found');
+});
+
+app.use((err, req, res, next) => {
+    log(new InternalError(err.message), true);
+    res.status(500).send('500: Internal Server Error');
+    next();
+});
 
 // ----------------- Response Handlers -----------------
+/*
 function respondError(res, error) {
     res.statusCode = error.responseCode;
     res.setHeader('Content-Type', 'text/txt');
@@ -33,7 +61,7 @@ function respondError(res, error) {
 
 // i want to ad this comment
 
-/* send a response with htmlString as html page */
+// send a response with htmlString as html page
 function htmlResponse(res, htmlString) {
     res.statusCode = 200;
     res.setHeader('Content-Type', "text/html");
@@ -103,23 +131,12 @@ function securePath(userPath) {
     return path.join(rootDir, path.normalize(userPath));
 }
 
+*/
+
+
 // ----------------- Server -----------------
-// todo: maybe use express instead of http module
-// https://expressjs.com/en/starter/hello-world.html
-// should maybe also have used to set up routes, but wanted to try doing it myself
-
-const server = http.createServer(requestHandler);
-
-function requestHandler(req, res) {
-    try {
-        processReq(req, res);
-    } catch (err) {
-        respondError(res, new InternalError(err.message));
-    }
-}
-
 function startServer() {
-    server.listen(PORT, hostname, () => {
-        log(`Server running at http://${hostname}:${PORT}/`);
+    app.listen(PORT, hostname, () => {
+        log(`Server runnign at http://${hostname}:${PORT}/`);
     });
 }

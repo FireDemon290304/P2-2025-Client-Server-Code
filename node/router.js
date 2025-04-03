@@ -1,10 +1,10 @@
 // todo: import app stuff
-import { respondError, fileResponse } from "./server.js";
-import { log, MethodNotAllowedError, NotImplementedError } from "./utils.js";
-export { processReq };
+//import { respondError, fileResponse } from "./server.js";
+//import { log, MethodNotAllowedError, NotImplementedError } from "./utils.js";
+//export { processReq };
 
 // todo: Change to express
-
+/*
 function processReq(req, res) {
     log("GOT: " + req.method + " " + req.url);
 
@@ -35,3 +35,4 @@ function processReq(req, res) {
             break;
     }
 }
+*/
