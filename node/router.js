@@ -3,6 +3,8 @@ import { respondError, fileResponse } from "./server.js";
 import { log, MethodNotAllowedError, NotImplementedError } from "./utils.js";
 export { processReq };
 
+// todo: Change to express
+
 function processReq(req, res) {
     log("GOT: " + req.method + " " + req.url);
 
