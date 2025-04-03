@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic UI Layout</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <section id="user-info">
+            <div>
+                <label for="name">Navn:</label>
+                <span id="name">Text</span>
+            </div>
+            <div>
+                <label for="uuid">UUID:</label>
+                <span id="uuid">Text</span>
+            </div>
+        </section>
+        <section id="data-import">
+            <div>
+                <label for="import-button">Import data from:</label>
+                <button id="import-button" action="import">Import Button</button>
+            </div>
+            <div>
+                <label for="data-source">Source of data:</label>
+                <span id="data-source">TODO: Source of data input field</span>
+            </div>
+            <div>
+                <label for="forecast-dropdown">Label for dropdown:</label>
+                <select id="forecast-dropdown">
+                    <option value="type1">Forecast type 1</option>
+                    <option value="type2">Forecast type 2</option>
+                    <option value="type3">Forecast type 3</option>
+                    <option value="type4">Forecast type 4</option>
+                </select>
+            </div>
+        </section>
+    </header>
+    <label for="canvas-container_id">Canvases (forcasts):</label>
+    <main class="canvas-container" id="canvas-container_id">
+        <canvas id="chart1">Canvas for Chart</canvas>
+        <canvas id="chart2">Canvas for Chart</canvas>
+    </main>
+    <script type="module" src="js/client_main.js"></script>
+</body>
+
+</html>

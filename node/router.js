@@ -1,9 +1,7 @@
 // todo: import app stuff
-import { htmlResponse, respondError, startServer, fileResponse } from "./server.js";
+import { respondError, fileResponse } from "./server.js";
 import { log, MethodNotAllowedError, NotImplementedError } from "./utils.js";
 export { processReq };
-
-startServer();
 
 function processReq(req, res) {
     log("GOT: " + req.method + " " + req.url);
@@ -17,7 +15,8 @@ function processReq(req, res) {
         case 'GET':     // handle all GET requests
             switch (path) {
                 case '/':
-                    htmlResponse(res, '<h1>Hello, World!</h1>');
+                    fileResponse(res, "/html/index.html");
+                    //htmlResponse(res, '<h1>Hello, World!</h1>');
                     break;
 
                 default:    // default is to serve files

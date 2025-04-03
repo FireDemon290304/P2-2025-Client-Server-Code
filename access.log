@@ -51,3 +51,222 @@ GOT: GET /favicon.ico
 [2025-03-25T14:13:30.323][INFO] GOT: GET /
 [2025-03-25T14:23:37.690] [INFO] Server running at http://127.0.0.1:3001/
 [2025-03-25T14:24:21.882] [INFO] GOT: GET /
+[2025-04-03T09:13:11.783] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:13:17.192] [INFO] GOT: GET /
+[2025-04-03T09:13:17.193] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\publicpublic\html\index.html
+[2025-04-03T09:13:17.200] [ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\publicpublic\html\index.html'
+[2025-04-03T09:13:17.619] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:13:17.620] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:13:57.421] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:14:01.433] [INFO] GOT: GET /
+[2025-04-03T09:14:01.434] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\publichtml\index.html
+[2025-04-03T09:14:01.441] [ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\publichtml\index.html'
+[2025-04-03T09:14:01.680] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:14:01.681] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:15:14.720] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:15:19.610] [INFO] GOT: GET /
+[2025-04-03T09:15:19.611] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\publichtml\index.html
+[2025-04-03T09:15:19.617] [ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\publichtml\index.html'
+[2025-04-03T09:15:19.725] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:15:19.725] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:15:22.722] [INFO] GOT: GET /
+[2025-04-03T09:15:22.723] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\publichtml\index.html
+[2025-04-03T09:15:22.725] [ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\publichtml\index.html'
+[2025-04-03T09:15:22.852] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:15:22.854] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:15:45.256] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:15:47.679] [INFO] GOT: GET /
+[2025-04-03T09:15:47.680] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:15:47.766] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:15:47.767] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:24:27.953] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:24:30.935] [INFO] GOT: GET /
+[2025-04-03T09:24:30.936] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:24:30.986] [INFO] GOT: GET /css/simple.css
+[2025-04-03T09:24:30.987] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\simple.css
+[2025-04-03T09:24:30.989] [ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\public\css\simple.css'
+[2025-04-03T09:24:31.083] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:24:31.084] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:26:20.910] [INFO] GOT: GET /css/simple.css
+[2025-04-03T09:26:20.910] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\simple.css
+[2025-04-03T09:26:20.912] [ERROR] NoResourceError (404): ENOENT: no such file or directory, open 'D:\IWPUni\P2-2025-Client-Server-Code\public\css\simple.css'
+[2025-04-03T09:27:43.872] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:27:47.051] [INFO] GOT: GET /
+[2025-04-03T09:27:47.052] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:27:47.106] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:27:47.106] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:27:47.284] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:27:47.285] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:29:22.473] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:29:24.031] [INFO] GOT: GET /
+[2025-04-03T09:29:24.032] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:29:24.107] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:29:24.108] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:29:24.282] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:29:24.283] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:29:57.029] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:32:19.203] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:32:20.299] [INFO] GOT: GET /
+[2025-04-03T09:32:20.300] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:32:20.415] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:32:20.416] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:32:20.656] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:32:20.657] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:33:01.791] [INFO] GOT: GET /
+[2025-04-03T09:33:01.791] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:33:01.848] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:33:01.849] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:33:02.035] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:33:02.035] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:45:07.287] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:45:13.047] [INFO] GOT: GET /
+[2025-04-03T09:45:13.048] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:45:13.132] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:45:13.132] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:45:13.151] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:45:13.151] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:45:13.312] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:45:13.312] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:46:30.535] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:46:32.490] [INFO] GOT: GET /
+[2025-04-03T09:46:32.491] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:46:32.539] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:46:32.539] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:46:32.563] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:46:32.563] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:46:33.013] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:46:33.014] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:47:05.500] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:47:06.346] [INFO] GOT: GET /
+[2025-04-03T09:47:06.346] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:47:06.432] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:47:06.433] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:47:06.447] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:47:06.448] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:47:06.551] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:47:06.551] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:49:38.936] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:49:41.418] [INFO] GOT: GET /
+[2025-04-03T09:49:41.418] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:49:41.470] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:49:41.471] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:49:41.827] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:49:41.828] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:49:41.894] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:49:41.894] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:50:34.356] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:50:35.161] [INFO] GOT: GET /
+[2025-04-03T09:50:35.161] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:50:35.220] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:50:35.220] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:50:35.534] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:50:35.534] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:50:35.594] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:50:35.594] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:54:18.950] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:54:28.207] [INFO] GOT: GET /
+[2025-04-03T09:54:28.207] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:54:28.314] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:54:28.315] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:54:28.377] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:54:28.378] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:54:28.451] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:54:28.451] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:56:26.224] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:56:28.207] [INFO] GOT: GET /
+[2025-04-03T09:56:28.207] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:56:28.296] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:56:28.297] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:56:28.307] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:56:28.308] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:56:28.450] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:56:28.451] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:57:02.797] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:57:04.900] [INFO] GOT: GET /
+[2025-04-03T09:57:04.901] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:57:05.005] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:57:05.005] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:57:05.018] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:57:05.019] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:57:05.374] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:57:05.374] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:57:45.007] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:57:47.905] [INFO] GOT: GET /
+[2025-04-03T09:57:47.906] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:57:47.997] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:57:47.998] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:57:48.016] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:57:48.016] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:57:48.417] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:57:48.418] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:57:49.502] [INFO] GOT: GET /
+[2025-04-03T09:57:49.502] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:57:49.576] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:57:49.577] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:57:49.608] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:57:49.609] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:57:49.754] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:57:49.755] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:57:58.620] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:58:00.633] [INFO] GOT: GET /
+[2025-04-03T09:58:00.634] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:58:00.713] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:58:00.715] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:58:00.736] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:58:00.736] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:58:00.872] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:58:00.872] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T09:58:19.221] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T09:58:20.962] [INFO] GOT: GET /
+[2025-04-03T09:58:20.962] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T09:58:21.036] [INFO] GOT: GET /css/style.css
+[2025-04-03T09:58:21.036] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T09:58:21.052] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T09:58:21.053] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T09:58:21.237] [INFO] GOT: GET /favicon.ico
+[2025-04-03T09:58:21.237] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T10:00:28.991] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T10:00:30.963] [INFO] GOT: GET /
+[2025-04-03T10:00:30.963] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T10:00:31.023] [INFO] GOT: GET /css/style.css
+[2025-04-03T10:00:31.023] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T10:00:31.061] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T10:00:31.061] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T10:00:31.529] [INFO] GOT: GET /favicon.ico
+[2025-04-03T10:00:31.530] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T10:00:48.478] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T10:00:50.141] [INFO] GOT: GET /
+[2025-04-03T10:00:50.142] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T10:00:50.204] [INFO] GOT: GET /css/style.css
+[2025-04-03T10:00:50.205] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T10:00:50.228] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T10:00:50.229] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T10:00:50.370] [INFO] GOT: GET /favicon.ico
+[2025-04-03T10:00:50.371] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T10:01:23.032] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T10:01:25.760] [INFO] GOT: GET /
+[2025-04-03T10:01:25.761] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T10:01:25.843] [INFO] GOT: GET /css/style.css
+[2025-04-03T10:01:25.844] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T10:01:25.858] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T10:01:25.858] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T10:01:25.977] [INFO] GOT: GET /favicon.ico
+[2025-04-03T10:01:25.977] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T10:02:29.496] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T10:02:32.150] [INFO] GOT: GET /
+[2025-04-03T10:02:32.151] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T10:02:32.279] [INFO] GOT: GET /css/style.css
+[2025-04-03T10:02:32.280] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T10:02:32.302] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T10:02:32.303] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T10:02:32.664] [INFO] GOT: GET /favicon.ico
+[2025-04-03T10:02:32.664] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
+[2025-04-03T10:03:35.263] [INFO] Server running at http://127.0.0.1:3000/
+[2025-04-03T10:03:36.952] [INFO] GOT: GET /
+[2025-04-03T10:03:36.953] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-03T10:03:37.068] [INFO] GOT: GET /css/style.css
+[2025-04-03T10:03:37.070] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\css\style.css
+[2025-04-03T10:03:37.083] [INFO] GOT: GET /js/client_main.js
+[2025-04-03T10:03:37.084] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\js\client_main.js
+[2025-04-03T10:03:37.460] [INFO] GOT: GET /favicon.ico
+[2025-04-03T10:03:37.460] [INFO] Serving file: D:\IWPUni\P2-2025-Client-Server-Code\public\favicon.ico
