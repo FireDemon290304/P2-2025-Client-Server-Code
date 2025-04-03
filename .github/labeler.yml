@@ -1,8 +1,14 @@
 # ------------------------- Default Labels -------------------------
 # Add Node Changes Label (except in PubRes)
+#Node Changes:
+#- changed-files:
+#  - any-glob-to-any-file: 'node/**/*'
 Node Changes:
-- changed-files:
-  - any-glob-to-any-file: 'node/**/*'
+  - changed-files:
+      any: 
+        - 'node/**/*'
+      not: 
+        - 'node/modules/**/*'
 
 # Add Public Resource label to PR which changes things in those folders
 Public Resources:
