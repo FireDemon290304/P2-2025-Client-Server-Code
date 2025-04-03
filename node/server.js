@@ -14,10 +14,9 @@ export { startServer, respondError, htmlResponse, jsonResponse, fileResponse };
 // ----------------- Basic configs -----------------
 dotenv.config();
 const hostname = '127.0.0.1';
-// for env to work, create .env file with PORT=3000 (or whatever port you want).
-// should be in root dir
-// dotevn in package.json as dependency so will be installed with npm install
-const PORT = process.env.PORT || 3000;      // todo: change to match actual server, not just local
+
+// node0: 3240, node9: 3249
+const PORT = process.env.PORT || 3240;      // todo: change to match actual server, not just local
 
 const rootDir = process.cwd();
 const publicDir = 'public';
