@@ -454,3 +454,40 @@ GOT: GET /favicon.ico
 [2025-04-08T12:46:43.486] [INFO] GOT: GET /api/forecast
 [2025-04-08T12:46:53.778] [INFO] GOT: GET /777
 [2025-04-08T12:46:53.779] [ERROR] NoResourceError (404): Not found
+[2025-04-08T13:04:15.446] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:04:22.569] [INFO] GOT: GET /
+[2025-04-08T13:04:22.569] [INFO] Serving file: D:\Git\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-08T13:04:22.571] [ERROR] TypeError (undefined): Cannot read properties of undefined (reading 'req')
+[2025-04-08T13:05:54.180] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:05:56.037] [INFO] GOT: GET /
+[2025-04-08T13:05:56.038] [INFO] Serving file: D:\Git\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-08T13:05:57.809] [INFO] GOT: GET /api/forecast
+[2025-04-08T13:12:53.189] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:12:57.819] [INFO] GOT: GET /
+[2025-04-08T13:12:57.820] [INFO] Serving GET / -> SENDFILE
+[2025-04-08T13:12:57.822] [INFO] Serving GET / -> END
+[2025-04-08T13:14:25.450] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:14:27.544] [INFO] GOT: GET /
+[2025-04-08T13:14:27.544] [INFO] Serving / -> sendFile
+[2025-04-08T13:17:25.050] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:17:27.952] [INFO] GOT: GET /
+[2025-04-08T13:17:27.953] [INFO] Serving url '/' -> sendFile
+[2025-04-08T13:17:46.783] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:17:48.020] [INFO] GOT: GET /
+[2025-04-08T13:17:48.021] [INFO] Serving url '/' with method sendFile
+[2025-04-08T13:17:49.078] [INFO] GOT: GET /
+[2025-04-08T13:17:49.079] [INFO] Serving url '/' with method sendFile
+[2025-04-08T13:17:58.198] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:18:00.820] [INFO] GOT: GET /
+[2025-04-08T13:18:00.821] [INFO] Serving / -> sendFile
+[2025-04-08T13:18:22.002] [INFO] GOT: GET /testinternal
+[2025-04-08T13:18:22.004] [ERROR] InternalError (500): Test error
+[2025-04-08T13:18:22.004] [INFO] Serving /testinternal -> send
+[2025-04-08T13:18:45.918] [INFO] GOT: GET /api/forecast
+[2025-04-08T13:18:45.920] [INFO] Serving /api/forecast -> json
+[2025-04-08T13:18:45.920] [INFO] Serving /api/forecast -> send
+[2025-04-08T13:19:08.337] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:19:10.483] [INFO] GOT: GET /
+[2025-04-08T13:19:10.484] [INFO] Serving / -> sendFile
+[2025-04-08T13:19:13.420] [INFO] GOT: GET /api/forecast
+[2025-04-08T13:19:13.421] [INFO] Serving /api/forecast -> json

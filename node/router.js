@@ -7,12 +7,26 @@ import { controller } from './modules/index.js';
 const router = express.Router();
 const publicDir = path.join(process.cwd(), 'public');
 
-// ----------------- Routes -----------------
-// logging middleware
+// ---------------------------------- Middleware ----------------------------------
+// logging
 router.use((req, res, next) => {
     log(`GOT: ${req.method} ${req.url}`);
     next();
 });
+
+router.use((req, res, next) => {
+    const methodsToWrap = ['json', 'sendFile'];
+    for (const method of methodsToWrap) {
+        const original = res[method];
+        res[method] = function (...args) {
+            log(`Serving ${req.originalUrl} -> ${method}`);
+            return original.apply(this, args);
+        };
+    }
+    next();
+});
+
+// ---------------------------------- Routes ----------------------------------
 
 router.get('/', (req, res) => {
     res.sendFile(path.join(publicDir, 'html', 'index.html'));
@@ -41,7 +55,7 @@ router.get('/api/specificForecast', () => {
     throw new NotImplementedError('No specifics implemented yet');
 });
 
-// ----------------- Errors -----------------
+// ---------------------------------- Errors ----------------------------------
 
 // Unknown routes
 router.use((req, res) => {
@@ -53,11 +67,10 @@ router.use((req, res) => {
 // generic errors middleware
 router.use((err, req, res, next) => {
     log(err);
-    
+
     // Handle known errors. If err is unknown, it will read as internal error
-    if (err.responseCode) {
-        res.status(err.responseCode).send(`${err.responseCode}: ${err.message}`);
-    } else { res.status(500).send('500: Internal Server Error'); }
+    if (err.responseCode) { res.status(err.responseCode).send(`${err.responseCode}: ${err.message}`); }
+    else { res.status(500).send('500: Internal Server Error'); }
 });
 
 export default router;
