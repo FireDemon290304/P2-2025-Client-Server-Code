@@ -299,3 +299,56 @@ GOT: GET /favicon.ico
 [2025-04-03T13:11:34.890] [INFO] GOT: GET /
 [2025-04-03T13:11:44.006] [INFO] GOT: GET /testerror
 [2025-04-03T13:11:44.007] [ERROR] NoResourceError (404): Resource not found
+[2025-04-08T09:08:13.159] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:08:52.429] [INFO] GOT: GET /
+[2025-04-08T09:09:08.020] [INFO] GOT: GET /testinternal
+[2025-04-08T09:09:08.025] [ERROR] InternalError (500): testing internal
+[2025-04-08T09:09:51.743] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:09:55.261] [INFO] GOT: GET /testinternal
+[2025-04-08T09:09:55.263] [ERROR] InternalError (500): Test error
+[2025-04-08T09:11:48.772] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:11:52.107] [INFO] GOT: GET /testinternal
+[2025-04-08T09:12:29.201] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:12:31.218] [INFO] GOT: GET /testinternal
+[2025-04-08T09:12:43.472] [INFO] GOT: GET /ttt
+[2025-04-08T09:12:43.474] [ERROR] NoResourceError (404): Resource not found
+[2025-04-08T09:13:14.333] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:13:16.641] [INFO] GOT: GET /ttt
+[2025-04-08T09:13:16.642] [ERROR] NoResourceError (404): Resource not found
+[2025-04-08T09:13:21.421] [INFO] GOT: GET /testinternal
+[2025-04-08T09:13:21.423] [ERROR] NoResourceError (404): 00: Test error
+[2025-04-08T09:13:37.095] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:13:44.366] [INFO] GOT: GET /testinternal
+[2025-04-08T09:13:44.368] [ERROR] NoResourceError (404): 100: Test error
+[2025-04-08T09:16:48.979] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:16:55.087] [INFO] GOT: GET /testinternal
+[2025-04-08T09:16:55.088] [ERROR] NoResourceError (404): Test error
+[2025-04-08T09:17:06.540] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:17:08.793] [INFO] GOT: GET /testinternal
+[2025-04-08T09:17:08.795] [ERROR] NoResourceError (404): 111: Test error
+[2025-04-08T09:21:27.250] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:21:38.888] [INFO] GOT: GET /testinternal
+[2025-04-08T09:21:38.891] [ERROR] NoResourceError (404): Test error
+[2025-04-08T09:21:44.366] [INFO] GOT: GET /testinte
+[2025-04-08T09:21:44.367] [ERROR] NoResourceError (404): Resource not found
+[2025-04-08T09:22:05.816] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:22:07.277] [INFO] GOT: GET /testinternal
+[2025-04-08T09:22:07.279] [ERROR] InternalError (500): Test error
+[2025-04-08T09:23:28.930] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:23:33.169] [INFO] GOT: GET /testint
+[2025-04-08T09:23:33.171] [ERROR] NoResourceError (404): Resource not found
+[2025-04-08T09:23:47.559] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:23:50.249] [INFO] GOT: GET /testint
+[2025-04-08T09:23:50.251] [ERROR] NoResourceError (404): Resource not found :)
+[2025-04-08T09:23:56.311] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:33:39.139] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:33:41.237] [INFO] GOT: GET /requestforecast
+[2025-04-08T09:36:48.268] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:36:51.026] [INFO] GOT: GET /requestforecast
+[2025-04-08T09:36:51.029] [ERROR] NotImplementedError (501): Forecast API not implemented yet
+[2025-04-08T09:37:04.275] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:37:10.496] [INFO] GOT: GET /requestforecast
+[2025-04-08T09:37:10.498] [ERROR] NotImplementedError (501): Forecast API not implemented yet
+[2025-04-08T09:37:12.176] [INFO] GOT: GET /
+[2025-04-08T09:38:33.359] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:38:35.197] [INFO] GOT: GET /

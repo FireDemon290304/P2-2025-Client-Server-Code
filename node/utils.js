@@ -25,8 +25,8 @@ function _logMessage(message) {
     logStream.write(`[${getTimestamp()}] [INFO] ${message}\n`);
 }
 
-function log(message, error=false) {
-    error ? _logError(message) : _logMessage(message);
+function log(obj) {
+    obj instanceof Error ? _logError(obj) : _logMessage(obj);
 }
 
 // --------------- UUID ---------------
