@@ -17,20 +17,28 @@ router.get('/', (req, res) => {
 });
 
 router.get('/testinternal', (req, res) => {
-    throw new InternalError('testing internal');
+    throw new InternalError('Test error');
 });
+
+
+// ----------------- Errors -----------------
 
 // Unknown routes
 router.use((req, res) => {
-    log(new NoResourceError('Resource not found'), true)
-    res.status(404).send('404: Resource not found');
+    const err = new NoResourceError('Not found');
+    log(err);
+    res.status(err.responseCode).send(`${err.responseCode}: ${err.message}`);
 });
 
-// ----------------- Errors -----------------
-// errors middleware
+
+// generic errors middleware
 router.use((err, req, res, next) => {
-    log(new InternalError(err.message), true);
-    res.status(500).send('500: Internal Server Error');
+    log(err);
+    
+    // Handle known errors. If err is unknown, it will read as internal error
+    if (err.responseCode) {
+        res.status(err.responseCode).send(`${err.responseCode}: ${err.message}`);
+    } else { res.status(500).send('500: Internal Server Error'); }
 });
 
 export default router;
