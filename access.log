@@ -341,3 +341,14 @@ GOT: GET /favicon.ico
 [2025-04-08T09:23:50.249] [INFO] GOT: GET /testint
 [2025-04-08T09:23:50.251] [ERROR] NoResourceError (404): Resource not found :)
 [2025-04-08T09:23:56.311] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:33:39.139] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:33:41.237] [INFO] GOT: GET /requestforecast
+[2025-04-08T09:36:48.268] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:36:51.026] [INFO] GOT: GET /requestforecast
+[2025-04-08T09:36:51.029] [ERROR] NotImplementedError (501): Forecast API not implemented yet
+[2025-04-08T09:37:04.275] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:37:10.496] [INFO] GOT: GET /requestforecast
+[2025-04-08T09:37:10.498] [ERROR] NotImplementedError (501): Forecast API not implemented yet
+[2025-04-08T09:37:12.176] [INFO] GOT: GET /
+[2025-04-08T09:38:33.359] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T09:38:35.197] [INFO] GOT: GET /

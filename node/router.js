@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import { log, InternalError, NoResourceError } from './utils.js'
+import { log, InternalError, NoResourceError, NotImplementedError } from './utils.js'
 
 const router = express.Router();
 const publicDir = path.join(process.cwd(), 'public');
@@ -20,6 +20,21 @@ router.get('/testinternal', (req, res) => {
     throw new InternalError('Test error');
 });
 
+router.get('/requestforecast', (req, res) => {
+    // Simulate a request to the forecast API
+    // Send message to server to request forecast
+    // Await response from server
+    // Return response to client
+
+    // Example of how to fetch data from the forecast API (maybe?)
+    // await fetch('http://localhost:3000/forecast')
+    //     .then(response => response.json())
+    //     .then(data => {...})
+    //     .then(data => {
+    //         res.send(data);})
+
+    throw new NotImplementedError('Forecast API not implemented yet');
+});
 
 // ----------------- Errors -----------------
 
@@ -29,7 +44,6 @@ router.use((req, res) => {
     log(err);
     res.status(err.responseCode).send(`${err.responseCode}: ${err.message}`);
 });
-
 
 // generic errors middleware
 router.use((err, req, res, next) => {
