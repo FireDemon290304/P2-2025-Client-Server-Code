@@ -7,7 +7,7 @@ import process from 'process';
 import dotenv from 'dotenv';
 
 import router from './router.js'
-import { log } from "./utils.js";
+import { log } from "./modules/utils.js";
 export { startServer };
 
 // ----------------- Basic configs -----------------

@@ -1,7 +1,8 @@
 import express from 'express';
 import path from 'path';
-import { log, InternalError, NoResourceError, NotImplementedError } from './utils.js'
-import { testAPI } from './modules/index.js';
+import { log, InternalError, NoResourceError, NotImplementedError } from './modules/utils.js'
+//import { testAPI } from './modules/index.js';
+import { controller } from './modules/index.js';
 
 const router = express.Router();
 const publicDir = path.join(process.cwd(), 'public');
@@ -29,7 +30,7 @@ router.get('/api/forecast', (req, res) => {
 
     // send data back with response
     // as json to be shown in client
-    testAPI().then( testdata => {
+    controller.test().then( testdata => {
         res.json(testdata);
     });
 

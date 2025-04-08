@@ -1,7 +1,8 @@
 // for logic and complex operations and API handlers
+export { testAPI as test};
 
 // send random data
-export async function testAPI() {
+async function testAPI() {
     const testData = {
         labels: [
             "01 Apr", "02 Apr", "03 Apr", "04 Apr", "05 Apr", "06 Apr", "07 Apr",

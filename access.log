@@ -430,3 +430,27 @@ GOT: GET /favicon.ico
 [2025-04-08T12:02:53.928] [INFO] GOT: GET /api/specificForecast
 [2025-04-08T12:02:53.930] [ERROR] NotImplementedError (501): No specifics implemented yet
 [2025-04-08T12:03:36.442] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:25:36.863] [INFO] Server runnign at http://127.0.0.1:3240/
+[2025-04-08T12:26:07.867] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:26:53.608] [INFO] GOT: GET /
+[2025-04-08T12:27:05.100] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:28:23.986] [INFO] GOT: GET /
+[2025-04-08T12:28:32.232] [INFO] GOT: GET /777
+[2025-04-08T12:28:32.234] [ERROR] NoResourceError (404): Not found
+[2025-04-08T12:28:38.082] [INFO] GOT: GET /testinternal
+[2025-04-08T12:28:38.084] [ERROR] InternalError (500): Test error
+[2025-04-08T12:36:02.090] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:43:21.559] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:43:26.102] [INFO] GOT: GET /testinternal
+[2025-04-08T12:43:26.104] [ERROR] InternalError (500): Test error
+[2025-04-08T12:43:27.877] [INFO] GOT: GET /
+[2025-04-08T12:43:29.625] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:43:29.626] [ERROR] TypeError (undefined): controller.testAPI is not a function
+[2025-04-08T12:43:47.857] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:43:49.501] [INFO] GOT: GET /
+[2025-04-08T12:43:50.043] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:46:38.915] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:46:41.977] [INFO] GOT: GET /
+[2025-04-08T12:46:43.486] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:46:53.778] [INFO] GOT: GET /777
+[2025-04-08T12:46:53.779] [ERROR] NoResourceError (404): Not found
