@@ -352,3 +352,142 @@ GOT: GET /favicon.ico
 [2025-04-08T09:37:12.176] [INFO] GOT: GET /
 [2025-04-08T09:38:33.359] [INFO] Server runnign at http://127.0.0.1:3000/
 [2025-04-08T09:38:35.197] [INFO] GOT: GET /
+[2025-04-08T11:18:56.111] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:19:14.246] [INFO] GOT: GET /testinternal
+[2025-04-08T11:19:14.248] [ERROR] InternalError (500): Test error
+[2025-04-08T11:19:24.143] [INFO] GOT: GET /
+[2025-04-08T11:20:11.382] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:20:13.728] [INFO] GOT: GET /
+[2025-04-08T11:20:13.824] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:21:13.685] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:21:13.737] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:21:24.979] [INFO] GOT: GET /
+[2025-04-08T11:21:25.059] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:21:37.723] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:21:37.965] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:22:30.845] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:22:33.819] [INFO] GOT: GET /
+[2025-04-08T11:22:38.418] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:23:11.976] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:23:11.987] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:23:16.067] [INFO] GOT: GET /
+[2025-04-08T11:23:21.228] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:23:59.624] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:23:59.877] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:24:05.715] [INFO] GOT: GET /
+[2025-04-08T11:24:07.832] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:29:09.617] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:29:09.767] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:29:50.463] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:29:53.841] [INFO] GOT: GET /
+[2025-04-08T11:29:58.289] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:29:58.293] [ERROR] TypeError (undefined): testdata.json is not a function
+[2025-04-08T11:31:25.000] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:31:28.031] [INFO] GOT: GET /
+[2025-04-08T11:31:31.308] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:31:31.312] [ERROR] TypeError (undefined): data.json is not a function
+[2025-04-08T11:32:26.587] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:32:29.810] [INFO] GOT: GET /
+[2025-04-08T11:32:31.757] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:33:56.453] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:33:56.490] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:33:58.575] [INFO] GOT: GET /
+[2025-04-08T11:34:00.614] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:34:42.465] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:34:42.585] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:34:46.809] [INFO] GOT: GET /
+[2025-04-08T11:35:01.846] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:38:15.890] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:38:15.941] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:38:19.240] [INFO] GOT: GET /
+[2025-04-08T11:38:21.597] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:41:46.827] [INFO] GOT: GET /
+[2025-04-08T11:41:50.045] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:42:16.759] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:42:19.668] [INFO] GOT: GET /
+[2025-04-08T11:42:21.195] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:42:36.477] [INFO] GOT: GET /
+[2025-04-08T11:42:39.826] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:49:45.521] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:49:50.182] [INFO] GOT: GET /
+[2025-04-08T11:49:53.244] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:50:18.338] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:52:39.951] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:52:43.347] [INFO] GOT: GET /
+[2025-04-08T11:52:45.144] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:53:23.777] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:53:26.444] [INFO] GOT: GET /
+[2025-04-08T11:53:27.818] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:55:33.299] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:55:36.227] [INFO] GOT: GET /
+[2025-04-08T11:55:39.493] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:57:00.387] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T11:57:02.569] [INFO] GOT: GET /
+[2025-04-08T11:57:04.497] [INFO] GOT: GET /api/forecast
+[2025-04-08T11:57:24.743] [INFO] GOT: GET /
+[2025-04-08T11:57:26.957] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:02:36.679] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:02:53.928] [INFO] GOT: GET /api/specificForecast
+[2025-04-08T12:02:53.930] [ERROR] NotImplementedError (501): No specifics implemented yet
+[2025-04-08T12:03:36.442] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:25:36.863] [INFO] Server runnign at http://127.0.0.1:3240/
+[2025-04-08T12:26:07.867] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:26:53.608] [INFO] GOT: GET /
+[2025-04-08T12:27:05.100] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:28:23.986] [INFO] GOT: GET /
+[2025-04-08T12:28:32.232] [INFO] GOT: GET /777
+[2025-04-08T12:28:32.234] [ERROR] NoResourceError (404): Not found
+[2025-04-08T12:28:38.082] [INFO] GOT: GET /testinternal
+[2025-04-08T12:28:38.084] [ERROR] InternalError (500): Test error
+[2025-04-08T12:36:02.090] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:43:21.559] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:43:26.102] [INFO] GOT: GET /testinternal
+[2025-04-08T12:43:26.104] [ERROR] InternalError (500): Test error
+[2025-04-08T12:43:27.877] [INFO] GOT: GET /
+[2025-04-08T12:43:29.625] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:43:29.626] [ERROR] TypeError (undefined): controller.testAPI is not a function
+[2025-04-08T12:43:47.857] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:43:49.501] [INFO] GOT: GET /
+[2025-04-08T12:43:50.043] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:46:38.915] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T12:46:41.977] [INFO] GOT: GET /
+[2025-04-08T12:46:43.486] [INFO] GOT: GET /api/forecast
+[2025-04-08T12:46:53.778] [INFO] GOT: GET /777
+[2025-04-08T12:46:53.779] [ERROR] NoResourceError (404): Not found
+[2025-04-08T13:04:15.446] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:04:22.569] [INFO] GOT: GET /
+[2025-04-08T13:04:22.569] [INFO] Serving file: D:\Git\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-08T13:04:22.571] [ERROR] TypeError (undefined): Cannot read properties of undefined (reading 'req')
+[2025-04-08T13:05:54.180] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:05:56.037] [INFO] GOT: GET /
+[2025-04-08T13:05:56.038] [INFO] Serving file: D:\Git\P2-2025-Client-Server-Code\public\html\index.html
+[2025-04-08T13:05:57.809] [INFO] GOT: GET /api/forecast
+[2025-04-08T13:12:53.189] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:12:57.819] [INFO] GOT: GET /
+[2025-04-08T13:12:57.820] [INFO] Serving GET / -> SENDFILE
+[2025-04-08T13:12:57.822] [INFO] Serving GET / -> END
+[2025-04-08T13:14:25.450] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:14:27.544] [INFO] GOT: GET /
+[2025-04-08T13:14:27.544] [INFO] Serving / -> sendFile
+[2025-04-08T13:17:25.050] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:17:27.952] [INFO] GOT: GET /
+[2025-04-08T13:17:27.953] [INFO] Serving url '/' -> sendFile
+[2025-04-08T13:17:46.783] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:17:48.020] [INFO] GOT: GET /
+[2025-04-08T13:17:48.021] [INFO] Serving url '/' with method sendFile
+[2025-04-08T13:17:49.078] [INFO] GOT: GET /
+[2025-04-08T13:17:49.079] [INFO] Serving url '/' with method sendFile
+[2025-04-08T13:17:58.198] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:18:00.820] [INFO] GOT: GET /
+[2025-04-08T13:18:00.821] [INFO] Serving / -> sendFile
+[2025-04-08T13:18:22.002] [INFO] GOT: GET /testinternal
+[2025-04-08T13:18:22.004] [ERROR] InternalError (500): Test error
+[2025-04-08T13:18:22.004] [INFO] Serving /testinternal -> send
+[2025-04-08T13:18:45.918] [INFO] GOT: GET /api/forecast
+[2025-04-08T13:18:45.920] [INFO] Serving /api/forecast -> json
+[2025-04-08T13:18:45.920] [INFO] Serving /api/forecast -> send
+[2025-04-08T13:19:08.337] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-08T13:19:10.483] [INFO] GOT: GET /
+[2025-04-08T13:19:10.484] [INFO] Serving / -> sendFile
+[2025-04-08T13:19:13.420] [INFO] GOT: GET /api/forecast
+[2025-04-08T13:19:13.421] [INFO] Serving /api/forecast -> json
