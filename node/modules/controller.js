@@ -7,9 +7,6 @@ const sum = array => array.reduce((sum, curr) => sum + curr, 0);
 const constantC = array => average(array.slice(1)) - lsForPhi(array) * average(array.slice(0, array.length-1));
 export async function formatDataAsObject(numberArr) { return { labels: Array.from({ length: numberArr.length }, (_, i) => i + 1), values: numberArr } };
 
-// 24 random vals (two years)
-export const simData = Array(24).fill(0).map((_, i) => i + Math.random() / 5);
-
 // send random data
 async function testAPI() {
     const testData = {
@@ -44,7 +41,7 @@ function difference(data) {
 
     let diff = [];
 
-    for(let i = 1; i <= data.length; i++) {
+    for(let i = 1; i < data.length; i++) {
         diff.push(data[i] - data[i - 1]);
     }
     return diff;
@@ -55,7 +52,7 @@ function lsForPhi(diffData) {
     let m = average(diffData);
     let num = 0, den = 0;
     
-    for(t = 1;t < data.length; t++) {
+    for(t = 1;t < diffData.length; t++) {
         num += (diffData[t] - m) * (diffData[t-1] - m) //tælleren
         den += Math.pow(diffData[t - 1]- m, 2); //nævneren
     }

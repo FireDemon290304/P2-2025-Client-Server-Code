@@ -92,7 +92,7 @@ export function generateSimData({
     frequency = 1
 } = {}) {
     // Initialize seeded random number generator
-    const rng = () => seed !== null ? seed : Math.random;     // not work: new Math.seedrandom(seed.toString())
+    const rng = () => seed !== null ? seed : Math.random();     // not work: new Math.seedrandom(seed.toString())
 
     const xValues = Array.from({ length }, (_, i) => i);
 

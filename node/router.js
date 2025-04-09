@@ -12,7 +12,7 @@ const sim = generateSimData({
     length: 12,
     trend: 'seasonal',
     noiseLevel: 0.6,
-    seed: 0.58
+    seed: null
 });
 
 // ---------------------------------- Middleware ----------------------------------
@@ -65,7 +65,7 @@ router.get('/api/otherARIMA', (req, res) => {
         .then(dataObj => { res.json(dataObj); });
 });
 
-router.get('/api/linearregression', async (req, res) => {
+router.get('/api/linearregression', (req, res) => {
     controller.ls(sim, 10)
         .then(data => { return controller.formatDataAsObject(sim.concat(data)); })
         .then(dataObj => { res.json(dataObj); });
