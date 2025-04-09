@@ -2,10 +2,18 @@ import express from 'express';
 import path from 'path';
 import { log, InternalError, NoResourceError, NotImplementedError } from './modules/utils.js'
 //import { testAPI } from './modules/index.js';
-import { controller } from './modules/index.js';
+import { controller, generateSimData } from './modules/index.js';
 
 const router = express.Router();
 const publicDir = path.join(process.cwd(), 'public');
+
+// generate test data
+const sim = generateSimData({
+    length: 12,
+    trend: 'seasonal',
+    noiseLevel: 0.6,
+    seed: 0.58
+});
 
 // ---------------------------------- Middleware ----------------------------------
 // logging
@@ -36,7 +44,7 @@ router.get('/testinternal', () => {
     throw new InternalError('Test error');
 });
 
-router.get('/api/forecast', (req, res) => {
+router.get('/api/test', (req, res) => {
     // Simulate a request to the forecast API
     // Send message to server to request forecast
     // Await response from server
@@ -49,6 +57,18 @@ router.get('/api/forecast', (req, res) => {
     });
 
     //throw new NotImplementedError('Forecast API not implemented yet');
+});
+
+router.get('/api/otherARIMA', (req, res) => {
+    controller.builtInARIMA(sim, 10)
+        .then(data => { return controller.formatDataAsObject(sim.concat(data[0])); })   // data[0] are preds, 1 is errors
+        .then(dataObj => { res.json(dataObj); });
+});
+
+router.get('/api/linearregression', async (req, res) => {
+    controller.ls(sim, 10)
+        .then(data => { return controller.formatDataAsObject(sim.concat(data)); })
+        .then(dataObj => { res.json(dataObj); });
 });
 
 router.get('/api/specificForecast', () => {

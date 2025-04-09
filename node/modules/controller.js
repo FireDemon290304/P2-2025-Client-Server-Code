@@ -5,6 +5,7 @@ import ARIMA from "arima";
 const average = array => array.reduce((sum, current) => sum + current, 0) / array.length;
 const sum = array => array.reduce((sum, curr) => sum + curr, 0);
 const constantC = array => average(array.slice(1)) - lsForPhi(array) * average(array.slice(0, array.length-1));
+export async function formatDataAsObject(numberArr) { return { labels: Array.from({ length: numberArr.length }, (_, i) => i + 1), values: numberArr } };
 
 // 24 random vals (two years)
 export const simData = Array(24).fill(0).map((_, i) => i + Math.random() / 5);
@@ -25,7 +26,7 @@ async function testAPI() {
 }
 
 // using lib (a bit easier)
-export function builtInARIMA(data, numPreds) {
+export async function builtInARIMA(data, numPreds) {
     // Init arima and start training
     const arima = new ARIMA({
         p: 2,
@@ -63,8 +64,8 @@ function lsForPhi(diffData) {
 
 }
 
-// least squares regression
-export function ls(data, numPreds) {
+// least squares regression/linear regression
+export async function ls(data, numPreds) {
     // data is a time series, so all y are the data, and x are the index/date/other
     const N = data.length;
     const x = [...Array(N).keys()];     // 0,1,2,...,N-1

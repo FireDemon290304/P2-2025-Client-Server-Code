@@ -1,5 +1,6 @@
-//import { startServer } from "./server.js";
+import { startServer } from "./server.js";
 
+/*
 import { print, controller, generateSimData } from './modules/index.js';
 
 const sim = generateSimData({
@@ -15,5 +16,6 @@ print('Builtin:');
 print(controller.builtInARIMA(sim, 5)[0]);
 print('lease square regression:')
 print(controller.ls(sim, 5));
+*/
 
-//startServer();
+startServer();

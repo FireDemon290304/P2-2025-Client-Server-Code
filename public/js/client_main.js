@@ -1,17 +1,20 @@
 'use strict'
 
-//import { Chart } from 'chart';
-
-function testButton() {
-    fetch('/api/forecast')
+function createChart(endpoint) {
+    fetch(`/api/${endpoint}`)
         .then(response => {
-            if (!response.ok) throw new Error("Failed to fetch forecast data");
+            if (!response.ok) throw new Error(`Failed to fetch data from ${endpoint}`);
             return response.json();
         })
         .then(data => {
             console.log(data);
             const ctx = document.getElementById('forecastChart');
-            // chart imported in client using jsdelivr.net
+
+            // reset if chart exists
+            if (Chart.getChart('forecastChart')) {
+                Chart.getChart('forecastChart').destroy();
+            }
+
             new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -22,12 +25,11 @@ function testButton() {
                         borderColor: 'rgba(255, 99, 132, 1)',
                         backgroundColor: 'rgba(255, 99, 132, 0.2)',
                         tension: 0.3,
-                        fill: true, // fills area under the curve
+                        fill: true,
                         pointRadius: 4,
                         pointBackgroundColor: 'rgba(255, 255, 255, 1)',
                         pointBorderColor: 'rgba(255, 99, 132, 1)'
                     }]
-                    
                 },
                 options: {
                     responsive: true,
@@ -38,11 +40,12 @@ function testButton() {
             });
         })
         .catch(err => {
-            console.error('Error loading forecast:', err);
+            console.error(`Error loading forecast data from ${endpoint}:`, err);
         });
 }
 
-document.getElementById("import-button").addEventListener("click", testButton);
+document.getElementById("import-button1").addEventListener("click", () => createChart('otherARIMA'));
+document.getElementById("import-button2").addEventListener("click", () => createChart('linearregression'));
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("loaded client js");
