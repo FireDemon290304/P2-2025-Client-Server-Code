@@ -5,6 +5,7 @@ export { log, getTimestamp };
 // --------------- Loggers ---------------
 const logFile = 'access.log';
 const logStream = fs.createWriteStream(logFile, { flags: 'a' });
+export const print = arg => console.log(arg);
 
 // helper function to get timestamp
 // Helper function to get timestamp in local ISO format
@@ -72,5 +73,43 @@ export class NotImplementedError extends Error {
         super(message);
         this.name = "NotImplementedError";
         this.responseCode = 501;
+    }
+}
+
+// --------------- Random ---------------
+
+/**
+ * Randomness function for testing stuff (curtesy of Phind AI)
+ * @param {*} param0 Options object
+ * @returns list of random values based on options
+ */
+export function generateSimData({
+    length = 24,
+    trend = 'linear',
+    noiseLevel = 0.2,
+    seed = null,
+    amplitude = 1,
+    frequency = 1
+} = {}) {
+    // Initialize seeded random number generator
+    const rng = () => seed !== null ? seed : Math.random;     // not work: new Math.seedrandom(seed.toString())
+
+    const xValues = Array.from({ length }, (_, i) => i);
+
+    switch(trend) {
+        case 'linear':
+            return xValues.map(x => x + rng() * noiseLevel);
+        case 'sinusoidal':
+            return xValues.map(x => 
+                amplitude * Math.sin(frequency * x) + 
+                rng() * noiseLevel
+            );
+        case 'seasonal':
+            return xValues.map(x => 
+                amplitude * Math.sin(frequency * x) + 
+                x * 0.1 + rng() * noiseLevel
+            );
+        default:
+            throw new Error(`Unknown trend type: ${trend}`);
     }
 }

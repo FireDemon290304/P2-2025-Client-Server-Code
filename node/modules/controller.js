@@ -1,17 +1,13 @@
 // for logic and complex operations and API handlers
-export { testAPI as test};
+export { testAPI as test };
 import ARIMA from "arima";
-
-//const options = {  };
-const arima = new ARIMA(options);
 
 const average = array => array.reduce((sum, current) => sum + current, 0) / array.length;
 const sum = array => array.reduce((sum, curr) => sum + curr, 0);
-const print = arg => console.log(arg);
 const constantC = array => average(array.slice(1)) - lsForPhi(array) * average(array.slice(0, array.length-1));
 
 // 24 random vals (two years)
-const simData = Array(24).fill(0).map((_, i) => i + Math.random() / 5);
+export const simData = Array(24).fill(0).map((_, i) => i + Math.random() / 5);
 
 // send random data
 async function testAPI() {
