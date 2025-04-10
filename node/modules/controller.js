@@ -25,6 +25,7 @@ export async function builtInARIMA(data, numPreds) {
     return allPreds[0];     // 1 is errors
 }
 
+/** @returns List of differences */
 function difference(data) {
 
     let diff = [];
@@ -75,12 +76,11 @@ export async function ls(data, numPreds) {
     const m = (N * sumXY - sumX * sumY) / (N * sumX2 - sumX * sumX);
     const b = (sumY - m * sumX) / N;
 
-    return [m, b]; // m = slope, b = y-intercept
     // 5: "assemble"
-    //const y = m * x + b
-    // return Array.from({ length: numPreds }, (_, i) => m * (N + i) + b);
+    return Array.from({ length: numPreds }, (_, i) => m * (N + i) + b);
 }
 
+/** Esimates theta using gridsearch with 0.01 size steps */
 function estimateTheta(diffData, phi, c) {
 
     let bestTheta = 0;
@@ -117,7 +117,11 @@ function estimateTheta(diffData, phi, c) {
     
 }
 
-
+/**
+ * Helper function for OurARIMA
+ * @param {NUmber[]} data Data to be used for predictions
+ * @returns Next predicted value
+ */
 function computeARIMA(data) {
 
     let deltaY = difference(data); // ∆yt = yt − yt−1
@@ -136,6 +140,12 @@ function computeARIMA(data) {
 }
 
 // ∆yt = c + ϕ1∆yt−1 + ··· + ϕp∆yt−p + ϵt + θ1ϵt−1 + ··· + θqϵt−q
+/**
+ * Function to make predictions using ARIMA
+ * @param {*} data Historical data
+ * @param {*} numPreds NUmber of predictions to make
+ * @returns List of predictions
+ */
 export async function OurARIMA(data, numPreds) {
 
     let predictions = [];
@@ -145,17 +155,14 @@ export async function OurARIMA(data, numPreds) {
     // loop over the data and predict
     for(let i = 0; i < numPreds; i++) {
         // predict the next value
-        prediction = await computeARIMA2(tempData); // ÆNDRET MIDLERTIDIG
+        prediction = computeARIMA(tempData);
         predictions.push(prediction);
 
         // update the data with the new prediction
         tempData.push(prediction);
-        
     }
 
     return predictions;
-
-
 }
 
 // --------------------------------------------------------------------------- CHATGPT!!!!!
@@ -163,7 +170,6 @@ export async function OurARIMA(data, numPreds) {
 function lsForPhi2(diffData) {
     // We'll start from index 2 so that we have diffData[t-2] defined.
     let n = diffData.length;
-    let sumX1 = 0, sumX2 = 0, sumY = 0;
     let sumX1X1 = 0, sumX2X2 = 0, sumX1X2 = 0;
     let sumX1Y = 0, sumX2Y = 0;
     
@@ -171,9 +177,6 @@ function lsForPhi2(diffData) {
          let x1 = diffData[t - 1];
          let x2 = diffData[t - 2];
          let y = diffData[t];
-         sumX1 += x1;
-         sumX2 += x2;
-         sumY += y;
          sumX1X1 += x1 * x1;
          sumX2X2 += x2 * x2;
          sumX1X2 += x1 * x2;
@@ -228,9 +231,9 @@ async function computeARIMA2(data) {
     let deltaY = difference(data); // ∆y_t = y_t − y_{t-1}
     
     // Get AR coefficients for order 2
-    // let phi = lsForPhi2(deltaY); // returns [phi1, phi2]
-     let phi = await ls(deltaY); // returns [phi1, phi2]
-    console.log("phi", phi);
+    let phi = lsForPhi2(deltaY); // returns [phi1, phi2]
+    // let phi = await ls(deltaY); // returns [phi1, phi2]
+    //console.log("phi", phi);
     // You may also recompute constant c; here we keep your constantC function,
     // but note that when extending to AR(2) you might need to adjust how c is estimated.
     let c = constantC(deltaY);
