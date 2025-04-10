@@ -887,3 +887,79 @@ GOT: GET /favicon.ico
 [2025-04-10T12:09:20.846] [INFO] Serving /api/forecast/otherARIMA -> json
 [2025-04-10T12:09:25.284] [INFO] GOT: GET /api/forecast/ourArima
 [2025-04-10T12:09:25.286] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:36:59.860] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:36:59.880] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:52:57.728] [INFO] GOT: GET /
+[2025-04-10T12:52:57.731] [INFO] Serving / -> sendFile
+[2025-04-10T12:53:19.210] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T12:53:22.201] [INFO] GOT: GET /
+[2025-04-10T12:53:22.202] [INFO] Serving / -> sendFile
+[2025-04-10T12:53:25.129] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:53:25.173] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:53:32.766] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:53:32.781] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:53:35.596] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:53:35.631] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:53:37.387] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:53:37.389] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:53:41.689] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:53:41.726] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:54:20.956] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:54:20.993] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:54:22.393] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:54:22.395] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:54:23.296] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:54:23.334] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:55:56.756] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:55:56.758] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:56:00.203] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:56:00.240] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:59:14.835] [INFO] GOT: GET /
+[2025-04-10T12:59:14.835] [INFO] Serving / -> sendFile
+[2025-04-10T12:59:20.800] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T12:59:24.141] [INFO] GOT: GET /
+[2025-04-10T12:59:24.143] [INFO] Serving / -> sendFile
+[2025-04-10T12:59:24.959] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:59:25.002] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:59:26.793] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:59:26.803] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:59:32.069] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:59:32.107] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:59:33.357] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:59:33.359] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:59:34.893] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:59:34.930] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T13:00:52.520] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T13:00:54.257] [INFO] GOT: GET /
+[2025-04-10T13:00:54.258] [INFO] Serving / -> sendFile
+[2025-04-10T13:00:55.961] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T13:00:56.004] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T13:00:57.075] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T13:00:57.085] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T13:03:04.698] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T13:03:06.292] [INFO] GOT: GET /
+[2025-04-10T13:03:06.292] [INFO] Serving / -> sendFile
+[2025-04-10T13:03:07.177] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T13:03:07.187] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T13:03:07.759] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T13:03:07.804] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T13:05:17.755] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T13:05:19.461] [INFO] GOT: GET /
+[2025-04-10T13:05:19.462] [INFO] Serving / -> sendFile
+[2025-04-10T13:05:20.407] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T13:05:20.452] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T13:07:09.817] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T13:07:11.499] [INFO] GOT: GET /
+[2025-04-10T13:07:11.500] [INFO] Serving / -> sendFile
+[2025-04-10T13:07:12.294] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T13:07:12.338] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T13:08:33.775] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T13:08:35.389] [INFO] GOT: GET /
+[2025-04-10T13:08:35.389] [INFO] Serving / -> sendFile
+[2025-04-10T13:08:36.140] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T13:08:36.186] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T13:09:02.081] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T13:09:04.075] [INFO] GOT: GET /
+[2025-04-10T13:09:04.075] [INFO] Serving / -> sendFile
+[2025-04-10T13:09:07.155] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T13:09:07.204] [INFO] Serving /api/forecast/ourArima -> json

@@ -56,6 +56,8 @@ function lsForPhi(diffData) {
  * @returns A promise that contains a list of numbers
  */
 export async function ls(data, numPreds) {
+
+    console.log("data", data);
     // data is a time series, so all y are the data, and x are the index/date/other
     const N = data.length;
     const x = [...Array(N).keys()];     // 0,1,2,...,N-1
@@ -73,9 +75,10 @@ export async function ls(data, numPreds) {
     const m = (N * sumXY - sumX * sumY) / (N * sumX2 - sumX * sumX);
     const b = (sumY - m * sumX) / N;
 
+    return [m, b]; // m = slope, b = y-intercept
     // 5: "assemble"
     //const y = m * x + b
-    return Array.from({ length: numPreds }, (_, i) => m * (N + i) + b);
+    // return Array.from({ length: numPreds }, (_, i) => m * (N + i) + b);
 }
 
 function estimateTheta(diffData, phi, c) {
@@ -142,7 +145,7 @@ export async function OurARIMA(data, numPreds) {
     // loop over the data and predict
     for(let i = 0; i < numPreds; i++) {
         // predict the next value
-        prediction = computeARIMA(tempData);
+        prediction = await computeARIMA2(tempData); // ÆNDRET MIDLERTIDIG
         predictions.push(prediction);
 
         // update the data with the new prediction
@@ -154,3 +157,108 @@ export async function OurARIMA(data, numPreds) {
 
 
 }
+
+// --------------------------------------------------------------------------- CHATGPT!!!!!
+
+function lsForPhi2(diffData) {
+    // We'll start from index 2 so that we have diffData[t-2] defined.
+    let n = diffData.length;
+    let sumX1 = 0, sumX2 = 0, sumY = 0;
+    let sumX1X1 = 0, sumX2X2 = 0, sumX1X2 = 0;
+    let sumX1Y = 0, sumX2Y = 0;
+    
+    for (let t = 2; t < n; t++) {
+         let x1 = diffData[t - 1];
+         let x2 = diffData[t - 2];
+         let y = diffData[t];
+         sumX1 += x1;
+         sumX2 += x2;
+         sumY += y;
+         sumX1X1 += x1 * x1;
+         sumX2X2 += x2 * x2;
+         sumX1X2 += x1 * x2;
+         sumX1Y += x1 * y;
+         sumX2Y += x2 * y;
+    }
+    
+    // Solve the normal equations using Cramer's rule:
+    // Matrix A: [[sumX1X1, sumX1X2], [sumX1X2, sumX2X2]]
+    // Vector B: [sumX1Y, sumX2Y]
+    let det = sumX1X1 * sumX2X2 - sumX1X2 * sumX1X2;
+    let phi1 = (sumX1Y * sumX2X2 - sumX1X2 * sumX2Y) / det;
+    let phi2 = (sumX2Y * sumX1X1 - sumX1X2 * sumX1Y) / det;
+    
+    return [phi1, phi2];
+}
+
+function estimateTheta2(diffData, phi, c) {
+    let bestTheta1 = 0, bestTheta2 = 0;
+    let bestError = Number.POSITIVE_INFINITY;
+    
+    // Use a nested grid search for theta1 and theta2. Adjust step size as needed.
+    for (let theta1 = -1; theta1 <= 1; theta1 += 0.01) {
+        for (let theta2 = -1; theta2 <= 1; theta2 += 0.01) {
+            let error = 0;
+            let epsilon1 = 0, epsilon2 = 0; // initial residuals for t=0 and t=1
+            // Start at t = 2 because we need two lag values
+            for (let t = 2; t < diffData.length; t++) {
+                const prediction = c 
+                    + phi[0] * diffData[t - 1] 
+                    + phi[1] * diffData[t - 2] 
+                    + theta1 * epsilon1 
+                    + theta2 * epsilon2;
+                const e = diffData[t] - prediction;
+                // Shift the residuals: update epsilon2, then epsilon1.
+                epsilon2 = epsilon1;
+                epsilon1 = e;
+                error += Math.pow(e, 2);
+            }
+            if (error < bestError) {
+                bestError = error;
+                bestTheta1 = theta1;
+                bestTheta2 = theta2;
+            }
+        }
+    }
+    
+    return [bestTheta1, bestTheta2];
+}
+
+async function computeARIMA2(data) {
+    let deltaY = difference(data); // ∆y_t = y_t − y_{t-1}
+    
+    // Get AR coefficients for order 2
+    // let phi = lsForPhi2(deltaY); // returns [phi1, phi2]
+     let phi = await ls(deltaY); // returns [phi1, phi2]
+    console.log("phi", phi);
+    // You may also recompute constant c; here we keep your constantC function,
+    // but note that when extending to AR(2) you might need to adjust how c is estimated.
+    let c = constantC(deltaY);
+    
+    // Estimate the two MA coefficients
+    let thetaPair = estimateTheta2(deltaY, phi, c); 
+    let theta1 = thetaPair[0];
+    let theta2 = thetaPair[1];
+    
+    // To forecast, we need the last two observed differences.
+    let n = deltaY.length;
+    // Also, simulate the residual sequence using the chosen parameters.
+    let epsilon1 = 0, epsilon2 = 0;
+    // Process residuals for all available diff values (starting from index 2)
+    for (let t = 2; t < n; t++) {
+        const prediction = c + phi[0] * deltaY[t - 1] + phi[1] * deltaY[t - 2] 
+                                  + theta1 * epsilon1 + theta2 * epsilon2;
+        const e = deltaY[t] - prediction;
+        epsilon2 = epsilon1;
+        epsilon1 = e;
+    }
+    
+    // Forecast the next difference Δy_{n+1}
+    let forecastDelta = c + phi[0] * deltaY[n - 1] + phi[1] * deltaY[n - 2] 
+                               + theta1 * epsilon1 + theta2 * epsilon2;
+    // Convert forecasted difference to forecasted level: y_{n+1} = y_n + forecastDelta
+    let yt = data[data.length - 1] + forecastDelta;
+    
+    return yt;
+}
+
