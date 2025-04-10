@@ -19,22 +19,31 @@
     <div class="container">
 
         <section class="left">
-            <section id="data-import">
-                <div>
-                    <label for="import-button">Import data from:</label>
-                    <button id="import-button" action="import">Import Button</button>
+            
+            <section id="settings">
+                
+                
+                <div id="select-file"> Vælg en fil
+                    <input type="file" id="file-input" hidden />
                 </div>
+                  
                 <div>
-                    <label for="forecast-dropdown">Label for dropdown:</label>
                     <select id="forecast-dropdown">
-                        <option value="type1">Forecast type 1</option>
-                        <option value="type2">Forecast type 2</option>
-                        <option value="type3">Forecast type 3</option>
-                        <option value="type4">Forecast type 4</option>
+                        <option value="" disabled selected>Vælg en prognose</option>
+                        <option value="omsætning">Omsætnings Prognose</option>
+                        <option value="omkostning">Omkostnings Prognose</option>
                     </select>
+                    
                 </div>
+
+                <div>
+                    <button type="button" id="calculate">Beregn prognose</button>
+                </div>
+
             </section>
+
         </section>
+
         <section class="right">
     
             <main class="canvas-container" id="canvas-container_id"></main>
