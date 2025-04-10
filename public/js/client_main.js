@@ -46,10 +46,15 @@ function testButton() {
 const fileInput = document.getElementById("file-input");
 
 // This fires when the file input button is clicked
-document.getElementById("select-file").addEventListener("click", () => {
+document.getElementById("select-file-button").addEventListener("click", () => {
     
     fileInput.click();
-    
+
+});
+
+// This fires when the calculate-forecast button is clicked
+document.getElementById("calculate-forecast-button").addEventListener("click", () => {
+
     //obviously just a test function to render the chart when clicking the button
     testButton();
 
@@ -66,9 +71,6 @@ fileInput.addEventListener("change", (e) => {
     }
 
 });
-
-
-document.getElementById("import-button").addEventListener("click", testButton);
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("loaded client js");

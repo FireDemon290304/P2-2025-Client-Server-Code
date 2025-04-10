@@ -40,7 +40,18 @@ header {
 }
 
 
-#select-file {
+#select-file-button {
+
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#calculate-forecast-button {
 
     border: 2px solid black;
     text-align: center;
