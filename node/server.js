@@ -25,6 +25,6 @@ app.use(router);
 // ----------------- Server -----------------
 function startServer() {
     app.listen(PORT, hostname, () => {
-        log(`Server runnign at http://${hostname}:${PORT}/`);
+        log(`Server running at http://${hostname}:${PORT}/`);
     });
 }
