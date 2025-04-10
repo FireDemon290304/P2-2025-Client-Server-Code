@@ -717,3 +717,41 @@ GOT: GET /favicon.ico
 [2025-04-10T09:33:42.781] [INFO] Serving /api/otherARIMA -> json
 [2025-04-10T09:33:45.928] [INFO] GOT: GET /api/linearregression
 [2025-04-10T09:33:45.929] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:43:20.498] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:43:59.238] [INFO] GOT: GET /
+[2025-04-10T09:43:59.239] [INFO] Serving / -> sendFile
+[2025-04-10T09:45:57.571] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:46:05.101] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:46:18.256] [INFO] GOT: GET /
+[2025-04-10T09:46:18.258] [INFO] Serving / -> sendFile
+[2025-04-10T09:46:22.883] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:46:22.885] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:46:39.466] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:46:39.478] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:47:02.494] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:47:04.451] [INFO] GOT: GET /
+[2025-04-10T09:47:04.453] [INFO] Serving / -> sendFile
+[2025-04-10T09:47:07.184] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:47:07.201] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:47:57.993] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:48:00.265] [INFO] GOT: GET /
+[2025-04-10T09:48:00.266] [INFO] Serving / -> sendFile
+[2025-04-10T09:48:01.609] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:48:01.620] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:48:04.605] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:48:04.607] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:48:06.222] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:48:06.224] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:57:43.990] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:58:07.786] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:58:15.536] [INFO] GOT: GET /
+[2025-04-10T09:58:15.537] [INFO] Serving / -> sendFile
+[2025-04-10T09:58:18.183] [INFO] GOT: GET /api/forecast/linearregression
+[2025-04-10T09:58:18.186] [ERROR] TypeError (undefined): forecastFunction is not a function
+[2025-04-10T09:58:40.397] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:58:42.012] [INFO] GOT: GET /
+[2025-04-10T09:58:42.013] [INFO] Serving / -> sendFile
+[2025-04-10T09:58:43.224] [INFO] GOT: GET /api/forecast/linearregression
+[2025-04-10T09:58:43.226] [INFO] Serving /api/forecast/linearregression -> json
+[2025-04-10T09:58:45.210] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T09:58:45.224] [INFO] Serving /api/forecast/otherARIMA -> json

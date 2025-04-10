@@ -59,25 +59,24 @@ router.get('/api/test', (req, res) => {
     //throw new NotImplementedError('Forecast API not implemented yet');
 });
 
-router.get('/api/otherARIMA', (req, res) => {
-    controller.builtInARIMA(sim, 10)
-        .then(predictedData => {
-            return Promise.all([
-                controller.formatDataAsObject(sim), // format historical
-                controller.formatDataAsObject(predictedData[0], sim.length) // format predicted
-            ]);
-        })
-        .then(([historicalData, predictedData]) => {
-            res.json({
-                labels: historicalData.labels.concat(predictedData.labels),
-                historicalValues: historicalData.values,
-                predictedValues: predictedData.values
-            });
-        })
-});
+router.get('/api/forecast/:method', (req, res) => {
+    // Extract path
+    const { method } = req.params;
 
-router.get('/api/linearregression', async (req, res) => {
-    controller.ls(sim, 10)
+    let forecastFunction;   // function pointer
+    switch (method) {
+        case 'otherARIMA':
+            forecastFunction = controller.builtInARIMA;
+            break;
+        case 'linearregression':
+            forecastFunction = controller.ls;
+            break;
+        default:
+            throw new NotImplementedError(`The requested forecast method '${method}' does not exist`);
+    }
+
+    // Do forecast and return result when ready
+    forecastFunction(sim, 10)
         .then(predictedData => {
             return Promise.all([
                 controller.formatDataAsObject(sim), // format historical
@@ -91,6 +90,10 @@ router.get('/api/linearregression', async (req, res) => {
                 predictedValues: predictedData.values
             });
         })
+        .catch(err => {
+            log(err);
+            res.status(500).send(`Error generating forecast ${method}. Trace:`, err);
+        });
 });
 
 router.get('/api/specificForecast', () => {

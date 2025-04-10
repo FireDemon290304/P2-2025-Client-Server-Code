@@ -38,8 +38,8 @@ export async function builtInARIMA(data, numPreds) {
     }).train(data);
 
     // predict
-    const [pred, errors] = arima.predict(numPreds);
-    return [pred, errors];
+    const allPreds = arima.predict(numPreds);
+    return allPreds[0];     // 1 is errors
 }
 
 function difference(data) {

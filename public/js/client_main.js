@@ -3,7 +3,7 @@
 
 
 function createChart(endpoint) {
-    fetch(`/api/${endpoint}`)
+    fetch(`/api/forecast/${endpoint}`)
         .then(response => {
             if (!response.ok) throw new Error(`Failed to fetch data from ${endpoint}`);
             return response.json();
