@@ -1,8 +1,8 @@
-/* Apply box-sizing globally */
-
 body {
-    /*max-width: 1200px;*/
+
     border: 2px solid black;
+    border-radius: 10px;
+
 }
 
 header {
@@ -12,16 +12,20 @@ header {
 }
 
 .container {
+
     display: flex;
     flex: 1;
-    height: 50vh; 
+    height: 50vh; /* This is the height of the "body" changing this will adjust the size of the black box */
+
 }
 
 .right {
+
     flex: 1;
     justify-content: center;  /* horizontal centering */
     align-items: center;      /* vertical centering */
     border: 2px solid red;
+
 }
 
 .left {
@@ -31,14 +35,8 @@ header {
     justify-content: center;  /* horizontal centering */
     align-items: center;      /* vertical centering */
     border: 2px solid blue;
-}
-
-#data-import {
-
-    padding: 10px;
 
 }
-
 
 #select-file-button {
 
@@ -61,4 +59,3 @@ header {
     cursor: pointer;
 
 }
-  
