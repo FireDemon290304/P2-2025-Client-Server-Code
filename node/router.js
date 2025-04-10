@@ -9,7 +9,7 @@ const publicDir = path.join(process.cwd(), 'public');
 
 // generate test data
 const sim = generateSimData({
-    length: 12,
+    length: 16,
     trend: 'seasonal',
     noiseLevel: 0.6,
     seed: null
@@ -63,6 +63,8 @@ router.get('/api/forecast/:method', (req, res) => {
     // Extract path
     const { method } = req.params;
 
+    console.log(`Forecast method: ${method}`);
+
     let forecastFunction;   // function pointer
     switch (method) {
         case 'otherARIMA':
@@ -70,6 +72,9 @@ router.get('/api/forecast/:method', (req, res) => {
             break;
         case 'linearregression':
             forecastFunction = controller.ls;
+            break;
+        case 'ourArima':
+            forecastFunction = controller.OurARIMA;
             break;
         default:
             throw new NotImplementedError(`The requested forecast method '${method}' does not exist`);
