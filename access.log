@@ -755,3 +755,135 @@ GOT: GET /favicon.ico
 [2025-04-10T09:58:43.226] [INFO] Serving /api/forecast/linearregression -> json
 [2025-04-10T09:58:45.210] [INFO] GOT: GET /api/forecast/otherARIMA
 [2025-04-10T09:58:45.224] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T10:15:23.731] [INFO] Server runnign at http://127.0.0.1:3240/
+[2025-04-10T10:17:17.891] [INFO] Server runnign at http://127.0.0.1:3240/
+[2025-04-10T10:19:38.552] [INFO] Server runnign at http://127.0.0.1:3240/
+[2025-04-10T10:20:22.689] [INFO] Server runnign at http://127.0.0.1:3240/
+[2025-04-10T10:24:45.512] [INFO] Server runnign at http://127.0.0.1:3240/
+[2025-04-10T10:28:16.279] [INFO] Server runnign at http://127.0.0.1:80/
+[2025-04-10T10:29:06.164] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T10:29:32.809] [INFO] GOT: GET /
+[2025-04-10T10:29:32.810] [INFO] Serving / -> sendFile
+[2025-04-10T10:29:34.695] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T10:29:34.717] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T10:29:35.893] [INFO] GOT: GET /api/forecast/linearregression
+[2025-04-10T10:29:35.894] [INFO] Serving /api/forecast/linearregression -> json
+[2025-04-10T11:51:53.734] [INFO] GOT: GET /
+[2025-04-10T11:51:53.737] [INFO] Serving / -> sendFile
+[2025-04-10T11:52:02.027] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T11:52:02.032] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T11:52:06.010] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:52:06.021] [ERROR] NotImplementedError (501): The requested forecast method 'ourArima' does not exist
+[2025-04-10T11:53:34.955] [INFO] GOT: GET /
+[2025-04-10T11:53:34.956] [INFO] Serving / -> sendFile
+[2025-04-10T11:53:36.591] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:53:36.592] [ERROR] NotImplementedError (501): The requested forecast method 'ourArima' does not exist
+[2025-04-10T11:54:11.412] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T11:54:11.416] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T11:54:54.828] [INFO] GOT: GET /
+[2025-04-10T11:54:54.829] [INFO] Serving / -> sendFile
+[2025-04-10T11:54:56.037] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:54:56.038] [ERROR] NotImplementedError (501): The requested forecast method 'ourArima' does not exist
+[2025-04-10T11:55:46.434] [INFO] GOT: GET /
+[2025-04-10T11:55:46.434] [INFO] Serving / -> sendFile
+[2025-04-10T11:55:47.801] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:55:47.802] [ERROR] NotImplementedError (501): The requested forecast method 'ourArima' does not exist
+[2025-04-10T11:56:19.646] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T11:56:24.331] [INFO] GOT: GET /
+[2025-04-10T11:56:24.332] [INFO] Serving / -> sendFile
+[2025-04-10T11:56:25.915] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:56:25.918] [ERROR] ReferenceError (undefined): thetaEpsilon is not defined
+[2025-04-10T11:57:16.719] [INFO] GOT: GET /
+[2025-04-10T11:57:16.719] [INFO] Serving / -> sendFile
+[2025-04-10T11:57:17.626] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:57:17.627] [ERROR] ReferenceError (undefined): thetaEpsilon is not defined
+[2025-04-10T11:57:18.459] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:57:18.461] [ERROR] ReferenceError (undefined): thetaEpsilon is not defined
+[2025-04-10T11:57:18.641] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:57:18.643] [ERROR] ReferenceError (undefined): thetaEpsilon is not defined
+[2025-04-10T11:57:18.784] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:57:18.785] [ERROR] ReferenceError (undefined): thetaEpsilon is not defined
+[2025-04-10T11:58:36.451] [INFO] GOT: GET /
+[2025-04-10T11:58:36.451] [INFO] Serving / -> sendFile
+[2025-04-10T11:58:37.305] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:58:37.306] [ERROR] ReferenceError (undefined): thetaEpsilon is not defined
+[2025-04-10T11:58:38.051] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T11:58:38.054] [ERROR] ReferenceError (undefined): thetaEpsilon is not defined
+[2025-04-10T12:01:10.444] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T12:01:14.605] [INFO] GOT: GET /
+[2025-04-10T12:01:14.606] [INFO] Serving / -> sendFile
+[2025-04-10T12:01:16.424] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:01:16.457] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:01:26.722] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:01:26.725] [ERROR] ReferenceError (undefined): prediction is not defined
+[2025-04-10T12:03:30.922] [INFO] GOT: GET /
+[2025-04-10T12:03:30.923] [INFO] Serving / -> sendFile
+[2025-04-10T12:03:32.390] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:03:32.392] [ERROR] ReferenceError (undefined): prediction is not defined
+[2025-04-10T12:03:52.494] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T12:03:54.775] [INFO] GOT: GET /
+[2025-04-10T12:03:54.776] [INFO] Serving / -> sendFile
+[2025-04-10T12:03:55.582] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:03:55.592] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:05:10.381] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:05:10.394] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:05:35.675] [INFO] GOT: GET /
+[2025-04-10T12:05:35.675] [INFO] Serving / -> sendFile
+[2025-04-10T12:05:36.929] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:05:36.930] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:05:41.324] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:05:41.326] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:05:42.717] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:05:42.718] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:05:49.066] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:05:49.067] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:05:50.242] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:05:50.250] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:05:50.761] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:05:50.763] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:07:10.702] [INFO] GOT: GET /
+[2025-04-10T12:07:10.702] [INFO] Serving / -> sendFile
+[2025-04-10T12:07:12.417] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:07:12.428] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:07:14.182] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:07:14.187] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:07:18.283] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:07:18.284] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:07:22.484] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:07:22.490] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:07:23.451] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:07:23.454] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:07:24.164] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:07:24.166] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:07:24.742] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:07:24.744] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:08:06.520] [INFO] GOT: GET /
+[2025-04-10T12:08:06.521] [INFO] Serving / -> sendFile
+[2025-04-10T12:08:23.518] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T12:08:28.338] [INFO] GOT: GET /
+[2025-04-10T12:08:28.339] [INFO] Serving / -> sendFile
+[2025-04-10T12:08:29.480] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:08:29.483] [ERROR] TypeError (undefined): Cannot read properties of undefined (reading 'length')
+[2025-04-10T12:08:57.633] [INFO] GOT: GET /
+[2025-04-10T12:08:57.633] [INFO] Serving / -> sendFile
+[2025-04-10T12:08:58.888] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:08:58.890] [ERROR] TypeError (undefined): Cannot read properties of undefined (reading 'length')
+[2025-04-10T12:09:00.561] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:09:00.562] [ERROR] TypeError (undefined): Cannot read properties of undefined (reading 'length')
+[2025-04-10T12:09:09.509] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T12:09:11.697] [INFO] GOT: GET /
+[2025-04-10T12:09:11.698] [INFO] Serving / -> sendFile
+[2025-04-10T12:09:12.479] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:09:12.487] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:09:15.814] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:09:15.816] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:09:17.080] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:09:17.082] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:09:17.971] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:09:17.972] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:09:19.249] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:09:19.250] [INFO] Serving /api/forecast/ourArima -> json
+[2025-04-10T12:09:20.817] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T12:09:20.846] [INFO] Serving /api/forecast/otherARIMA -> json
+[2025-04-10T12:09:25.284] [INFO] GOT: GET /api/forecast/ourArima
+[2025-04-10T12:09:25.286] [INFO] Serving /api/forecast/ourArima -> json

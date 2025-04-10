@@ -73,7 +73,7 @@ async function renderChart(ctx, dataObj) {
 }
 
 document.getElementById("import-button1").addEventListener("click", () => createChart('otherARIMA'));
-document.getElementById("import-button2").addEventListener("click", () => createChart('linearregression'));
+document.getElementById("import-button2").addEventListener("click", () => createChart('ourArima'));
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("loaded client js");

@@ -83,6 +83,10 @@ function estimateTheta(diffData, phi, c) {
 
     let bestTheta = 0;
     let bestError = Number.POSITIVE_INFINITY;
+    let bestEpsiolon = 0;
+
+    // we need to estimate theta, so we need to iterate over all possible values of theta
+    // and find the one that minimizes the error
 
     // Grid search over theta in the interval [-1, 1] with steps of 0.01
     for(let theta = -1; theta <= 1; theta += 0.01) {
@@ -103,28 +107,51 @@ function estimateTheta(diffData, phi, c) {
         if (error < bestError) {
             bestError = error;
             bestTheta = theta;
+            bestEpsiolon = epsilon;
         }
     }
 
-    return bestTheta;
+    return [bestTheta, bestEpsiolon];
     
 }
 
 
+function computeARIMA(data) {
+
+    let deltaY = difference(data); // ∆yt = yt − yt−1
+
+    let phi = lsForPhi(deltaY); // ϕ1
+    let thetaEpsilon = estimateTheta(deltaY, phi); 
+    let theta = thetaEpsilon[0]; // θ1
+    let epsilon = thetaEpsilon[1]; // εt−1
+    let c = constantC(deltaY); // c
+
+    let deltaYt = c + phi * deltaY[deltaY.length - 1] + theta * epsilon; // ∆yt = c + ϕ1∆yt−1 + θ1ϵt−1
+
+    let yt = data[data.length - 1] + deltaYt; // yt = yt−1 + ∆yt
+
+    return yt;
+}
 
 // ∆yt = c + ϕ1∆yt−1 + ··· + ϕp∆yt−p + ϵt + θ1ϵt−1 + ··· + θqϵt−q
-async function OurARIMA(data) {
-    
-    // delta y
-    let deltaY = [];
+export async function OurARIMA(data, numPreds) {
 
-    // uncertainty
+    let predictions = [];
+    let prediction;
+    let tempData = data.slice(); // make a copy of the data
 
-    // calc c
-    // calc auto reg
-    // calc moving avr
-    const c = 1;
+    // loop over the data and predict
+    for(let i = 0; i < numPreds; i++) {
+        // predict the next value
+        prediction = computeARIMA(tempData);
+        predictions.push(prediction);
 
+        // update the data with the new prediction
+        tempData.push(prediction);
+        
+    }
+
+    return predictions;
 
 
 }

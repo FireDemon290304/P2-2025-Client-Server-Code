@@ -17,6 +17,11 @@ describe('Controller Prediction Functions', () => {
         validatePredictions(predictions, numPredictions);
     });
 
+    test('OurARIMA generates valid predictions', async () => {
+        const predictions = await controller.OurARIMA(testData, numPredictions);
+        validatePredictions(predictions, numPredictions);
+    });
+
     test('ls (Linear Regression) generates valid predictions', async () => {
         const predictions = await controller.ls(testData, numPredictions);
         validatePredictions(predictions, numPredictions);
