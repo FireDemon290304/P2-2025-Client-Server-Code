@@ -32,7 +32,7 @@ async function renderChart(ctx, dataObj) {
     if (Chart.getChart('forecastChart')) Chart.getChart('forecastChart').destroy();
 
     // add nulls to predicted data to align it with historical data
-    const alignedPredictedValues = Array(dataObj.historicalValues.length - 1).fill(null).concat(dataObj.predictedValues);
+    const alignedPredictedValues = Array(dataObj.historicalValues.length).fill(null).concat(dataObj.predictedValues);
 
     new Chart(ctx, {
         type: 'line',

@@ -2,7 +2,6 @@
 import ARIMA from "arima";
 
 const average = array => array.reduce((sum, current) => sum + current, 0) / array.length;
-const sum = array => array.reduce((sum, curr) => sum + curr, 0);
 const constantC = array => average(array.slice(1)) - lsForPhi(array) * average(array.slice(0, array.length-1));
 export async function formatDataAsObject(numberArr, startAt = 0) { return { labels: Array.from({ length: numberArr.length }, (_, i) => i + startAt), values: numberArr } };
 
@@ -10,7 +9,7 @@ export async function formatDataAsObject(numberArr, startAt = 0) { return { labe
  * ARIMA using lib (a bit easier)
  * @param {Number[]} data List of historical data that is used to make predictions
  * @param {Number} numPreds Number of predictions to make
- * @returns A promise constaining two lists of numbers: One with predictions, another with errors
+ * @returns A promise constaining a list of numbers with predictions
  */
 export async function builtInARIMA(data, numPreds) {
     // Init arima and start training
