@@ -491,3 +491,267 @@ GOT: GET /favicon.ico
 [2025-04-08T13:19:10.484] [INFO] Serving / -> sendFile
 [2025-04-08T13:19:13.420] [INFO] GOT: GET /api/forecast
 [2025-04-08T13:19:13.421] [INFO] Serving /api/forecast -> json
+[2025-04-09T16:39:49.216] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:39:52.201] [INFO] GOT: GET /
+[2025-04-09T16:39:52.202] [INFO] Serving / -> sendFile
+[2025-04-09T16:39:54.215] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T16:39:54.222] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T16:40:00.873] [INFO] GOT: GET /api/leasesquares
+[2025-04-09T16:40:00.875] [ERROR] TypeError (undefined): controller.ls(...).then is not a function
+[2025-04-09T16:40:25.489] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:40:27.418] [INFO] GOT: GET /
+[2025-04-09T16:40:27.419] [INFO] Serving / -> sendFile
+[2025-04-09T16:40:28.885] [INFO] GOT: GET /api/leasesquares
+[2025-04-09T16:40:28.886] [INFO] Serving /api/leasesquares -> json
+[2025-04-09T16:47:07.627] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:47:10.875] [INFO] GOT: GET /
+[2025-04-09T16:47:10.876] [INFO] Serving / -> sendFile
+[2025-04-09T16:47:11.874] [INFO] GOT: GET /api/leasesquares
+[2025-04-09T16:51:35.744] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:51:38.475] [INFO] GOT: GET /
+[2025-04-09T16:51:38.476] [INFO] Serving / -> sendFile
+[2025-04-09T16:51:39.839] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:52:02.833] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:52:04.376] [INFO] GOT: GET /
+[2025-04-09T16:52:04.377] [INFO] Serving / -> sendFile
+[2025-04-09T16:52:05.055] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:52:05.055] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:52:26.062] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:52:26.063] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:52:53.646] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:52:55.416] [INFO] GOT: GET /
+[2025-04-09T16:52:55.417] [INFO] Serving / -> sendFile
+[2025-04-09T16:52:57.218] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:52:57.220] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:53:29.494] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:53:31.227] [INFO] GOT: GET /
+[2025-04-09T16:53:31.228] [INFO] Serving / -> sendFile
+[2025-04-09T16:53:32.091] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:53:32.092] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:53:33.742] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:53:33.742] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:54:14.396] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:54:15.738] [INFO] GOT: GET /
+[2025-04-09T16:54:15.738] [INFO] Serving / -> sendFile
+[2025-04-09T16:54:16.700] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:54:16.702] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:55:28.505] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:55:29.863] [INFO] GOT: GET /
+[2025-04-09T16:55:29.864] [INFO] Serving / -> sendFile
+[2025-04-09T16:55:30.965] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:55:30.967] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:57:14.154] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:57:15.723] [INFO] GOT: GET /
+[2025-04-09T16:57:15.724] [INFO] Serving / -> sendFile
+[2025-04-09T16:57:17.386] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:57:17.387] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:57:58.297] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:57:59.477] [INFO] GOT: GET /
+[2025-04-09T16:57:59.477] [INFO] Serving / -> sendFile
+[2025-04-09T16:58:00.573] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:58:00.574] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T16:58:40.735] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T16:58:41.972] [INFO] GOT: GET /
+[2025-04-09T16:58:41.973] [INFO] Serving / -> sendFile
+[2025-04-09T16:58:42.657] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T16:58:42.658] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T17:02:41.738] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:02:43.634] [INFO] GOT: GET /
+[2025-04-09T17:02:43.635] [INFO] Serving / -> sendFile
+[2025-04-09T17:02:45.063] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:02:45.066] [ERROR] TypeError (undefined): simobj.labels is not iterable
+[2025-04-09T17:03:18.009] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:03:19.314] [INFO] GOT: GET /
+[2025-04-09T17:03:19.314] [INFO] Serving / -> sendFile
+[2025-04-09T17:03:20.054] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:03:20.057] [ERROR] TypeError (undefined): controller.formatDataAsObject.labels is not iterable
+[2025-04-09T17:04:00.141] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:04:03.441] [INFO] GOT: GET /
+[2025-04-09T17:04:03.441] [INFO] Serving / -> sendFile
+[2025-04-09T17:04:05.013] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:04:05.015] [ERROR] TypeError (undefined): controller.formatDataAsObject.labels is not iterable
+[2025-04-09T17:07:26.020] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:07:29.116] [INFO] GOT: GET /
+[2025-04-09T17:07:29.116] [INFO] Serving / -> sendFile
+[2025-04-09T17:07:29.600] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:07:29.600] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T17:08:15.097] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:08:16.563] [INFO] GOT: GET /
+[2025-04-09T17:08:16.564] [INFO] Serving / -> sendFile
+[2025-04-09T17:08:17.141] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:08:17.142] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T17:10:39.380] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:10:40.854] [INFO] GOT: GET /
+[2025-04-09T17:10:40.855] [INFO] Serving / -> sendFile
+[2025-04-09T17:10:41.557] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:10:41.558] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T17:10:58.104] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:10:59.862] [INFO] GOT: GET /
+[2025-04-09T17:10:59.863] [INFO] Serving / -> sendFile
+[2025-04-09T17:11:00.545] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:11:00.547] [INFO] Serving /api/leastsquares -> json
+[2025-04-09T17:14:56.220] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:14:57.844] [INFO] GOT: GET /
+[2025-04-09T17:14:57.844] [INFO] Serving / -> sendFile
+[2025-04-09T17:14:58.527] [INFO] GOT: GET /api/leastsquares
+[2025-04-09T17:14:58.528] [ERROR] NoResourceError (404): Not found
+[2025-04-09T17:15:10.694] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:15:11.780] [INFO] GOT: GET /
+[2025-04-09T17:15:11.781] [INFO] Serving / -> sendFile
+[2025-04-09T17:15:12.348] [INFO] GOT: GET /api/linearregression
+[2025-04-09T17:15:12.348] [INFO] Serving /api/linearregression -> json
+[2025-04-09T17:15:58.889] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:16:00.750] [INFO] GOT: GET /api/linearregression
+[2025-04-09T17:16:00.751] [INFO] Serving /api/linearregression -> json
+[2025-04-09T17:16:01.810] [INFO] GOT: GET /
+[2025-04-09T17:16:01.811] [INFO] Serving / -> sendFile
+[2025-04-09T17:16:02.652] [INFO] GOT: GET /api/linearregression
+[2025-04-09T17:16:02.653] [INFO] Serving /api/linearregression -> json
+[2025-04-09T17:16:03.630] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T17:16:03.637] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T17:19:15.574] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:19:18.160] [INFO] GOT: GET /
+[2025-04-09T17:19:18.160] [INFO] Serving / -> sendFile
+[2025-04-09T17:19:19.252] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T17:19:19.263] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T17:19:21.254] [INFO] GOT: GET /api/linearregression
+[2025-04-09T17:19:21.255] [INFO] Serving /api/linearregression -> json
+[2025-04-09T17:19:28.666] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T17:19:28.670] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T17:19:56.171] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:19:58.115] [INFO] GOT: GET /
+[2025-04-09T17:19:58.116] [INFO] Serving / -> sendFile
+[2025-04-09T17:19:59.168] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T17:19:59.180] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T17:21:03.040] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:21:04.641] [INFO] GOT: GET /
+[2025-04-09T17:21:04.642] [INFO] Serving / -> sendFile
+[2025-04-09T17:21:05.693] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T17:21:05.704] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T17:21:12.436] [INFO] GOT: GET /api/linearregression
+[2025-04-09T17:21:12.436] [INFO] Serving /api/linearregression -> json
+[2025-04-09T17:21:13.545] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T17:21:13.547] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T17:21:48.710] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-09T17:21:50.377] [INFO] GOT: GET /
+[2025-04-09T17:21:50.377] [INFO] Serving / -> sendFile
+[2025-04-09T17:21:51.480] [INFO] GOT: GET /api/otherARIMA
+[2025-04-09T17:21:51.493] [INFO] Serving /api/otherARIMA -> json
+[2025-04-09T17:21:55.191] [INFO] GOT: GET /api/linearregression
+[2025-04-09T17:21:55.192] [INFO] Serving /api/linearregression -> json
+[2025-04-10T08:57:33.159] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T08:57:45.190] [INFO] GOT: GET /
+[2025-04-10T08:57:45.191] [INFO] Serving / -> sendFile
+[2025-04-10T08:57:47.619] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T08:57:47.667] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T08:57:50.466] [INFO] GOT: GET /api/linearregression
+[2025-04-10T08:57:50.468] [INFO] Serving /api/linearregression -> json
+[2025-04-10T08:57:52.365] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T08:57:52.402] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:07:59.323] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:08:01.271] [INFO] GOT: GET /
+[2025-04-10T09:08:01.272] [INFO] Serving / -> sendFile
+[2025-04-10T09:08:03.304] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:08:03.315] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:09:44.071] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:09:47.041] [INFO] GOT: GET /
+[2025-04-10T09:09:47.043] [INFO] Serving / -> sendFile
+[2025-04-10T09:09:49.165] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:09:49.211] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:09:51.933] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:11:13.627] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:11:23.819] [INFO] GOT: GET /
+[2025-04-10T09:11:23.820] [INFO] Serving / -> sendFile
+[2025-04-10T09:11:27.139] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:15:07.065] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:15:10.238] [INFO] GOT: GET /
+[2025-04-10T09:15:10.239] [INFO] Serving / -> sendFile
+[2025-04-10T09:15:11.852] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:15:11.853] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:17:06.239] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:17:08.204] [INFO] GOT: GET /
+[2025-04-10T09:17:08.205] [INFO] Serving / -> sendFile
+[2025-04-10T09:17:10.050] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:17:10.051] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:17:41.817] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:17:44.955] [INFO] GOT: GET /
+[2025-04-10T09:17:44.956] [INFO] Serving / -> sendFile
+[2025-04-10T09:17:46.680] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:17:46.682] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:17:48.444] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:17:48.475] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:18:19.940] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:18:25.424] [INFO] GOT: GET /
+[2025-04-10T09:18:25.425] [INFO] Serving / -> sendFile
+[2025-04-10T09:18:26.715] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:18:26.734] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:18:31.228] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:18:31.230] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:18:32.567] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:18:32.576] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:18:38.309] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:18:38.318] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:18:58.632] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:19:02.242] [INFO] GOT: GET /
+[2025-04-10T09:19:02.244] [INFO] Serving / -> sendFile
+[2025-04-10T09:19:04.068] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:19:04.087] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:20:13.056] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:20:14.430] [INFO] GOT: GET /
+[2025-04-10T09:20:14.431] [INFO] Serving / -> sendFile
+[2025-04-10T09:20:15.607] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:20:15.623] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:20:18.817] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:20:18.819] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:20:23.115] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:20:23.120] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:31:42.551] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:31:45.208] [INFO] GOT: GET /
+[2025-04-10T09:31:45.209] [INFO] Serving / -> sendFile
+[2025-04-10T09:31:47.190] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:31:47.192] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:33:38.648] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:33:40.797] [INFO] GOT: GET /
+[2025-04-10T09:33:40.798] [INFO] Serving / -> sendFile
+[2025-04-10T09:33:42.759] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:33:42.781] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:33:45.928] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:33:45.929] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:43:20.498] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:43:59.238] [INFO] GOT: GET /
+[2025-04-10T09:43:59.239] [INFO] Serving / -> sendFile
+[2025-04-10T09:45:57.571] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:46:05.101] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:46:18.256] [INFO] GOT: GET /
+[2025-04-10T09:46:18.258] [INFO] Serving / -> sendFile
+[2025-04-10T09:46:22.883] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:46:22.885] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:46:39.466] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:46:39.478] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:47:02.494] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:47:04.451] [INFO] GOT: GET /
+[2025-04-10T09:47:04.453] [INFO] Serving / -> sendFile
+[2025-04-10T09:47:07.184] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:47:07.201] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:47:57.993] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:48:00.265] [INFO] GOT: GET /
+[2025-04-10T09:48:00.266] [INFO] Serving / -> sendFile
+[2025-04-10T09:48:01.609] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:48:01.620] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:48:04.605] [INFO] GOT: GET /api/linearregression
+[2025-04-10T09:48:04.607] [INFO] Serving /api/linearregression -> json
+[2025-04-10T09:48:06.222] [INFO] GOT: GET /api/otherARIMA
+[2025-04-10T09:48:06.224] [INFO] Serving /api/otherARIMA -> json
+[2025-04-10T09:57:43.990] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:58:07.786] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:58:15.536] [INFO] GOT: GET /
+[2025-04-10T09:58:15.537] [INFO] Serving / -> sendFile
+[2025-04-10T09:58:18.183] [INFO] GOT: GET /api/forecast/linearregression
+[2025-04-10T09:58:18.186] [ERROR] TypeError (undefined): forecastFunction is not a function
+[2025-04-10T09:58:40.397] [INFO] Server runnign at http://127.0.0.1:3000/
+[2025-04-10T09:58:42.012] [INFO] GOT: GET /
+[2025-04-10T09:58:42.013] [INFO] Serving / -> sendFile
+[2025-04-10T09:58:43.224] [INFO] GOT: GET /api/forecast/linearregression
+[2025-04-10T09:58:43.226] [INFO] Serving /api/forecast/linearregression -> json
+[2025-04-10T09:58:45.210] [INFO] GOT: GET /api/forecast/otherARIMA
+[2025-04-10T09:58:45.224] [INFO] Serving /api/forecast/otherARIMA -> json
