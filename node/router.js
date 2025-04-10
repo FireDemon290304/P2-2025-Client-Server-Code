@@ -61,14 +61,36 @@ router.get('/api/test', (req, res) => {
 
 router.get('/api/otherARIMA', (req, res) => {
     controller.builtInARIMA(sim, 10)
-        .then(data => { return controller.formatDataAsObject(sim.concat(data[0])); })   // data[0] are preds, 1 is errors
-        .then(dataObj => { res.json(dataObj); });
+        .then(predictedData => {
+            return Promise.all([
+                controller.formatDataAsObject(sim), // format historical
+                controller.formatDataAsObject(predictedData[0], sim.length) // format predicted
+            ]);
+        })
+        .then(([historicalData, predictedData]) => {
+            res.json({
+                labels: historicalData.labels.concat(predictedData.labels),
+                historicalValues: historicalData.values,
+                predictedValues: predictedData.values
+            });
+        })
 });
 
-router.get('/api/linearregression', (req, res) => {
+router.get('/api/linearregression', async (req, res) => {
     controller.ls(sim, 10)
-        .then(data => { return controller.formatDataAsObject(sim.concat(data)); })
-        .then(dataObj => { res.json(dataObj); });
+        .then(predictedData => {
+            return Promise.all([
+                controller.formatDataAsObject(sim), // format historical
+                controller.formatDataAsObject(predictedData, sim.length) // format predicted
+            ]);
+        })
+        .then(([historicalData, predictedData]) => {
+            res.json({
+                labels: historicalData.labels.concat(predictedData.labels),
+                historicalValues: historicalData.values,
+                predictedValues: predictedData.values
+            });
+        })
 });
 
 router.get('/api/specificForecast', () => {

@@ -5,7 +5,7 @@ import ARIMA from "arima";
 const average = array => array.reduce((sum, current) => sum + current, 0) / array.length;
 const sum = array => array.reduce((sum, curr) => sum + curr, 0);
 const constantC = array => average(array.slice(1)) - lsForPhi(array) * average(array.slice(0, array.length-1));
-export async function formatDataAsObject(numberArr) { return { labels: Array.from({ length: numberArr.length }, (_, i) => i + 1), values: numberArr } };
+export async function formatDataAsObject(numberArr, startAt = 0) { return { labels: Array.from({ length: numberArr.length }, (_, i) => i + startAt), values: numberArr } };
 
 // send random data
 async function testAPI() {
@@ -22,7 +22,12 @@ async function testAPI() {
     return testData
 }
 
-// using lib (a bit easier)
+/**
+ * ARIMA using lib (a bit easier)
+ * @param {Number[]} data List of historical data that is used to make predictions
+ * @param {Number} numPreds Number of predictions to make
+ * @returns A promise constaining two lists of numbers: One with predictions, another with errors
+ */
 export async function builtInARIMA(data, numPreds) {
     // Init arima and start training
     const arima = new ARIMA({
@@ -32,7 +37,7 @@ export async function builtInARIMA(data, numPreds) {
         verbose: false
     }).train(data);
 
-    // Predict next 12 values
+    // predict
     const [pred, errors] = arima.predict(numPreds);
     return [pred, errors];
 }
@@ -61,7 +66,12 @@ function lsForPhi(diffData) {
 
 }
 
-// least squares regression/linear regression
+/**
+ * Least squares regression/linear regression
+ * @param {Number[]} data List of historical data that is used to make predictions
+ * @param {Number} numPreds Number of predictions to make
+ * @returns A promise that contains a list of numbers
+ */
 export async function ls(data, numPreds) {
     // data is a time series, so all y are the data, and x are the index/date/other
     const N = data.length;
