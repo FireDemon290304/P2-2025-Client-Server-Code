@@ -9,48 +9,63 @@
 </head>
 
 <body>
-    <header>
-        <section id="user-info">
-            <div>
-                <label for="name">Navn:</label>
-                <span id="name">Text</span>
-            </div>
-            <div>
-                <label for="uuid">UUID:</label>
-                <span id="uuid">Text</span>
-            </div>
-        </section>
-        <section id="data-import">
-            <div>
-                <label for="import-button">Import data from:</label>
-                <button id="import-button" action="import">Import Button</button>
-            </div>
-            <div>
-                <label for="data-source">Source of data:</label>
-                <span id="data-source">TODO: Source of data input field</span>
-            </div>
-            <div>
-                <label for="forecast-dropdown">Label for dropdown:</label>
-                <select id="forecast-dropdown">
-                    <option value="type1">Forecast type 1</option>
-                    <option value="type2">Forecast type 2</option>
-                    <option value="type3">Forecast type 3</option>
-                    <option value="type4">Forecast type 4</option>
-                </select>
-            </div>
-        </section>
-    </header>
-    <label for="canvas-container_id">Canvases (forcasts):</label>
-    <main class="canvas-container" id="canvas-container_id">
-        <div>
-            <canvas id="forecastChart"></canvas>
-        </div>
-    </main>
-        <!-- Include Chart.js -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-        <!-- Include your client-side script -->
-        <script src="/js/client_main.js"></script>
+    <header>
+
+        <h2>Regnemaskine</h2>
+
+    </header>
+
+    <div class="container">
+
+        <section class="left">
+            <section id="user-info">
+                <div>
+                    <label for="name">Navn:</label>
+                    <span id="name">Text</span>
+                </div>
+                <div>
+                    <label for="uuid">UUID:</label>
+                    <span id="uuid">Text</span>
+                </div>
+            </section>
+            <section id="data-import">
+                <div>
+                    <label for="import-button">Import data from:</label>
+                    <button id="import-button" action="import">Import Button</button>
+                </div>
+                <div>
+                    <label for="data-source">Source of data:</label>
+                    <span id="data-source">TODO: Source of data input field</span>
+                </div>
+                <div>
+                    <label for="forecast-dropdown">Label for dropdown:</label>
+                    <select id="forecast-dropdown">
+                        <option value="type1">Forecast type 1</option>
+                        <option value="type2">Forecast type 2</option>
+                        <option value="type3">Forecast type 3</option>
+                        <option value="type4">Forecast type 4</option>
+                    </select>
+                </div>
+            </section>
+        </section>
+        <section class="right">
+    
+            <main class="canvas-container" id="canvas-container_id"></main>
+            <div>
+                <canvas id="forecastChart"></canvas>
+            </div>
+    
+        </section>
+
+    </div>
+
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Include your client-side script -->
+    <script src="/js/client_main.js"></script>
+    
 </body>
 
 </html>
