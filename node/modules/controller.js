@@ -1,26 +1,10 @@
 // for logic and complex operations and API handlers
-export { testAPI as test };
 import ARIMA from "arima";
 
 const average = array => array.reduce((sum, current) => sum + current, 0) / array.length;
 const sum = array => array.reduce((sum, curr) => sum + curr, 0);
 const constantC = array => average(array.slice(1)) - lsForPhi(array) * average(array.slice(0, array.length-1));
 export async function formatDataAsObject(numberArr, startAt = 0) { return { labels: Array.from({ length: numberArr.length }, (_, i) => i + startAt), values: numberArr } };
-
-// send random data
-async function testAPI() {
-    const testData = {
-        labels: [
-            "01 Apr", "02 Apr", "03 Apr", "04 Apr", "05 Apr", "06 Apr", "07 Apr",
-            "08 Apr", "09 Apr", "10 Apr", "11 Apr", "12 Apr", "13 Apr", "14 Apr"
-        ],
-        values: [
-            1200, 1350, 1280, 1600, 1700, 1850, 2100,
-            1950, 2000, 2300, 2200, 2100, 2250, 2400
-        ]
-    };
-    return testData
-}
 
 /**
  * ARIMA using lib (a bit easier)
@@ -57,7 +41,7 @@ function lsForPhi(diffData) {
     let m = average(diffData);
     let num = 0, den = 0;
     
-    for(t = 1;t < diffData.length; t++) {
+    for(let t = 1;t < diffData.length; t++) {
         num += (diffData[t] - m) * (diffData[t-1] - m) //tælleren
         den += Math.pow(diffData[t - 1]- m, 2); //nævneren
     }
