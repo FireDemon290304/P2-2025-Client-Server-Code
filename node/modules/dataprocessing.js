@@ -242,10 +242,15 @@ function readcsvPrMonth(csv) {
     return monthlyData;
 }
 
-//example usage
-const csvFile = csvToJSON(csvData);
-const transformedData = transformDataToAccountStructure(csvFile);
-console.log(transformedData);
-console.log('------------------------------------');
-const MonthSums = mounthlySumsArrays(transformedData);
-console.log(MonthSums);
+/*
+{
+    "1000": {
+      "kontonavn": "Salg af varer/ydelser m/moms",
+      "MånedSum": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    "2000": {
+      "kontonavn": "Salg af varer/ydelser m/moms",
+      "MånedSum": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    }
+  }...
+*/
