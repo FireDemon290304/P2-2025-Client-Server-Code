@@ -42,7 +42,35 @@ function testButton() {
         });
 }
 
-document.getElementById("import-button").addEventListener("click", testButton);
+// input file functionality
+const fileInput = document.getElementById("file-input");
+
+// This fires when the file input button is clicked
+document.getElementById("select-file-button").addEventListener("click", () => {
+    
+    fileInput.click();
+
+});
+
+// This fires when the calculate-forecast button is clicked
+document.getElementById("calculate-forecast-button").addEventListener("click", () => {
+
+    //obviously just a test function to render the chart when clicking the button
+    testButton();
+
+});
+
+// This fires when a file is selected
+fileInput.addEventListener("change", (e) => {
+    
+    const file = e.target.files[0]; // get the first file selected
+
+    //debug function to log the selected file.
+    if (file) {
+        console.log("Selected file:", file.name);
+    }
+
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("loaded client js");

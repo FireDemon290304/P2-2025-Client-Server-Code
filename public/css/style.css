@@ -1,36 +1,81 @@
-/* Apply box-sizing globally */
-* {
-    box-sizing: border-box;
-}
-
 body {
-    /*max-width: 1200px;*/
-    margin: auto;
+
     border: 2px solid black;
-    padding: 10px;
+    border-radius: 10px;
+
 }
 
 header {
+
+    text-align: center;
+
+}
+
+.container {
+
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    overflow: hidden;
+    flex: 1;
+    height: 50vh; /* This is the height of the "body" changing this will adjust the size of the black box */
+
+}
+
+.right {
+
+    flex: 1;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    border: 2px solid red;
+
+}
+
+.left {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    border: 2px solid blue;
+
+}
+
+#select-file-button {
+
+    border: 2px solid black;
+    text-align: center;
     padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
 }
 
-section {
+#calculate-forecast-button {
+
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/* Makes the forecast chart 95% of its parent */
+#forecastChart {
+    
+    max-width: 95%;
+    max-height: 95%;
+
+}
+
+/* Makes sure the forecast chart is centered, and doesn't  */
+.canvas-container {
+
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100%; /* Ensures it spans the section */
+    height: 100%; /* If necessary, set a height */
 
-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-canvas {
-    width: 100%; /* or a specific width like 600px */
-    height: 400px; /* or any desired height */
-    border: 2px solid black; /* Optional: for visibility */
 }
