@@ -1,4 +1,3 @@
-
 const csvData = `
 Konto;Kontonavn;Dato;Bilag;Bilagstype;Tekst;Momstype;Beløb;Saldo
 1000;Salg af varer/ydelser m/moms;05-01-2024;210236;Salgsfaktura;Tilgængeliggørelse af dokumenter;Dansk salgsmoms;-1.500,00;-1.500,00
@@ -148,7 +147,6 @@ Konto;Kontonavn;Dato;Bilag;Bilagstype;Tekst;Momstype;Beløb;Saldo
 1000;Salg af varer/ydelser m/moms;18-12-2024;210308;Salgsfaktura;Online kursus;Dansk salgsmoms;-6.500,00;-3.600.635,00
 1000;Salg af varer/ydelser m/moms;19-12-2024;210309;Salgsfaktura;Tilgængelighedstest;Dansk salgsmoms;-32.500,00;-3.633.135,00
 1000;Salg af varer/ydelser m/moms;20-12-2024;210310;Salgsfaktura;Minikursus;Dansk salgsmoms;-1.750,00;-3.634.885,00
-
 `;
 
 //make a function that can take a CSV file and convert it to plain text
@@ -167,7 +165,9 @@ function csvToPlainText(file) {
     return text.result;
 }
   
-// --------------- CSV to JSON ---------------
+// -------------------- CSV to JSON -------------------------
+// takes a CSV as text and retunss a JSON object of each line
+//-----------------------------------------------------------
 function csvToJSON(csv, delimiter = ';') {
   const lines = csv.trim().split('\n');
   const headers = lines[0].split(delimiter).map(h => h.trim());
@@ -214,15 +214,38 @@ function transformDataToAccountStructure(data) {
   }, {});
 }
 
+//Makes a 12 long array of the sums of each mounth for each account
+function mounthlySumsArrays (data) {
+    const result = {};
+    
+    for (const konto in data) {
+        const { kontonavn, perMåned } = data[konto];
+        const MånedSum = new Array(12).fill(0);
+    
+        for (const month in perMåned) {
+            const monthIndex = new Date(Date.parse(month + " 1, 2021")).getMonth(); // Convert month name to index
+            MånedSum[monthIndex] = perMåned[month].reduce((acc, val) => acc + val, 0);
+        }
+    
+        result[konto] = { kontonavn, MånedSum };
+    }
+    
+    return result;
+}
+
+
 function readcsvPrMonth(csv) {
     const csvText = csvToPlainText(csv);
     const data = csvToJSON(csvText);
     const transformedData = transformDataToAccountStructure(data);
-  return transformedData;
+    const monthlyData = mounthlySumsArrays(transformedData);
+    return monthlyData;
 }
 
-// Example usage:
-const transformedData = readcsvPrMonth(csvData);
+//example usage
+const csvFile = csvToJSON(csvData);
+const transformedData = transformDataToAccountStructure(csvFile);
 console.log(transformedData);
-console.log(JSON.stringify(transformedData, null, 2));
-
+console.log('------------------------------------');
+const MonthSums = mounthlySumsArrays(transformedData);
+console.log(MonthSums);
