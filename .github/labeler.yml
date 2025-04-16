@@ -1,8 +1,5 @@
 # ------------------------- Default Labels -------------------------
 # Add Node Changes Label (except in PubRes)
-#Node Changes:
-#- changed-files:
-#  - any-glob-to-any-file: 'node/**/*'
 Node Changes:
   - changed-files:
       any: 
@@ -12,36 +9,43 @@ Node Changes:
 
 # Add Public Resource label to PR which changes things in those folders
 Public Resources:
-- changed-files:
-  - any-glob-to-any-file: 'public/**/*'
+  - changed-files:
+      any: 
+        - 'public/**/*'
 
 # ------------------------- Code Changes -------------------------
 # Add app, router, server label (excluding modules)
 App Changes:
-- changed-files:
-  - any-glob-to-any-file: 'node/**/*'
-  - not-in-folder: 'node/modules/**/*'
+  - changed-files:
+      any: 
+        - 'node/**/*'
+      not: 
+        - 'node/modules/**/*'
 
 # Add Module Changes Label
 Module Changes:
-- changed-files:
-  - in-folder: 'node/modules/**/*'
+  - changed-files:
+      any: 
+        - 'node/modules/**/*'
 
 # ------------------------- Custom Labels -------------------------
 # Add Workflow Changes Label
 Workflow Changes:
-- changed-files:
-  - '.github/workflows/**/*.yml'
+  - changed-files:
+      any: 
+        - '.github/workflows/**/*.yml'
 
 # Configuration Changes Label
 Configuration Changes:
-- changed-files:
-  - 'eslint.config.mjs'
-  - 'package.json'
-  - '.gitignore'
+  - changed-files:
+      any: 
+        - 'eslint.config.mjs'
+        - 'package.json'
+        - '.gitignore'
 
 # Add Documentation Changes Label
 Documentation Changes:
-- changed-files:
-  - 'README.md'
-  - 'LICENSE'
+  - changed-files:
+      any: 
+        - 'README.md'
+        - 'LICENSE'
