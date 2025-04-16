@@ -17,12 +17,15 @@ jobs:
       pull-requests: write
 
     steps:
-    - name: Debug changed files
-      run: |
-        echo "Changed files:"
-        git fetch origin ${{ github.base_ref }}
-        git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Debug changed files
+        run: |
+          echo "Changed files:"
+          git fetch origin ${{ github.base_ref }}
+          git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }}
+
+      - uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
