@@ -1,41 +1,29 @@
-# ------------------------- Default Labels -------------------------
-# Add Node Changes Label (except in PubRes)
-Node Changes:
-  - changed-files:
-      any: 
-        - 'node/**/*'
-      not: 
-        - 'node/modules/**/*'
-
-# Add Public Resource label to PR which changes things in those folders
-Public Resources:
-  - changed-files:
-      any: 
-        - 'public/**/*'
-
-# ------------------------- Code Changes -------------------------
-# Add app, router, server label (excluding modules)
+# Node application changes (excluding modules)
 App Changes:
   - changed-files:
       any: 
-        - 'node/**/*'
-      not: 
-        - 'node/modules/**/*'
+        - 'node/app.js'
+        - 'node/server.js'
+        - 'node/router.js'
 
-# Add Module Changes Label
+# Node module changes
 Module Changes:
   - changed-files:
       any: 
         - 'node/modules/**/*'
 
-# ------------------------- Custom Labels -------------------------
-# Add Workflow Changes Label
+# Public resource changes
+Public Resources:
+  - changed-files:
+      any: 
+        - 'public/**/*'
+
+# Workflow and config changes
 Workflow Changes:
   - changed-files:
       any: 
         - '.github/workflows/**/*.yml'
 
-# Configuration Changes Label
 Configuration Changes:
   - changed-files:
       any: 
@@ -43,7 +31,7 @@ Configuration Changes:
         - 'package.json'
         - '.gitignore'
 
-# Add Documentation Changes Label
+# Docs
 Documentation Changes:
   - changed-files:
       any: 
