@@ -55,8 +55,6 @@ router.get('/api/test', (req, res) => {
     controller.test().then( testdata => {
         res.json(testdata);
     });
-
-    //throw new NotImplementedError('Forecast API not implemented yet');
 });
 
 router.get('/api/forecast/:method', (req, res) => {
