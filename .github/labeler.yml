@@ -1,4 +1,4 @@
-# Node application changes (excluding modules)
+# Only label PRs that modify node root files (not modules)
 App Changes:
   - changed-files:
       any: 
@@ -6,24 +6,25 @@ App Changes:
         - 'node/server.js'
         - 'node/router.js'
 
-# Node module changes
+# Label only when node/modules is touched
 Module Changes:
   - changed-files:
       any: 
         - 'node/modules/**/*'
 
-# Public resource changes
+# Label only if public folder is touched
 Public Resources:
   - changed-files:
       any: 
         - 'public/**/*'
 
-# Workflow and config changes
+# Label if workflows change
 Workflow Changes:
   - changed-files:
       any: 
         - '.github/workflows/**/*.yml'
 
+# Configuration changes
 Configuration Changes:
   - changed-files:
       any: 
