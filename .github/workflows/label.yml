@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/labeler@v3
+        uses: actions/labeler@v4
         with:
           fetch-depth: 0
 
@@ -28,6 +28,7 @@ jobs:
           git fetch origin ${{ github.base_ref }}
           git diff --name-only origin/${{ github.base_ref }}...${{ github.sha }}
 
-      - uses: actions/labeler@v3.1.0
+      - name: Run
+        uses: actions/labeler@v3.1.0
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
