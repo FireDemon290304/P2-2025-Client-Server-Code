@@ -18,9 +18,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/labeler@v4
-        with:
-          fetch-depth: 0
+        uses: actions/labeler@v3
 
       - name: Debug changed files
         run: |
